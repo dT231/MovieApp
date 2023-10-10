@@ -33,7 +33,7 @@ public final class WeakReference<T>: WeakReferencing {
         }
     }
     
-    init(_ object: T) {
+    public init(_ object: T) {
         self.object = object
     }
     

@@ -11,7 +11,7 @@ import UIKit
 public protocol Presentable: AnyObject {
     var toPresent: UIViewController { get }
 }
-//
-//extension UIViewController: Presentable {
-//    public var toPresent: UIViewController { self }
-//}
+
+extension UIViewController: Presentable {
+    public var toPresent: UIViewController { self }
+}

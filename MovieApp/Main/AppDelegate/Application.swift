@@ -5,7 +5,7 @@
 //  Created by Dan Gorb on 15.09.2023.
 //
 
-import Dependencies
+import MADependencies
 import MAModulesInfrastructure
 
 protocol ApplicationProtocol: AnyObject {
@@ -18,7 +18,7 @@ protocol ApplicationProtocol: AnyObject {
 open class Application: ApplicationProtocol {
     var dependencyFactory: DependencyFactoryProtocol
     
-    var startupDecorators: [ApplicationDecorator]
+    var startupDecorators: [ApplicationDecorator] = []
     
     func start() {
         <#code#>
@@ -29,6 +29,6 @@ open class Application: ApplicationProtocol {
     private let coordinatorFactory: CoordinatorFactoring
     private let moduleFactory: ModulesFactoring
     
-    private var applicationCoordinator: (baseCoordinator: BaseCoo)
+    private var applicationCoordinator: (baseCoordinator: BaseCoordinator, AnyCoordinator)
     
 }

@@ -11,6 +11,7 @@
 		E801ED642ACEF2AD00414CC5 /* MAFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C42E1C2ABC4DF3009075FB /* MAFoundation.framework */; };
 		E801ED652ACEF2AD00414CC5 /* MAFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8C42E1C2ABC4DF3009075FB /* MAFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E801ED6B2ACEF54700414CC5 /* NavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E801ED6A2ACEF54700414CC5 /* NavigationController+.swift */; };
+		E8B653F92AD55C95007A469C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653F82AD55C95007A469C /* Node.swift */; };
 		E8C42DB42ABAF967009075FB /* CoordinatorFactoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */; };
 		E8C42DB82ABAFAC5009075FB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DB72ABAFAC5009075FB /* main.swift */; };
 		E8C42DBC2ABAFF55009075FB /* ModulesFactoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DBB2ABAFF55009075FB /* ModulesFactoring.swift */; };
@@ -188,6 +189,7 @@
 /* Begin PBXFileReference section */
 		E801ED622ACEF0BD00414CC5 /* WeakReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakReference.swift; sourceTree = "<group>"; };
 		E801ED6A2ACEF54700414CC5 /* NavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+.swift"; sourceTree = "<group>"; };
+		E8B653F82AD55C95007A469C /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoring.swift; sourceTree = "<group>"; };
 		E8C42DB72ABAFAC5009075FB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E8C42DBB2ABAFF55009075FB /* ModulesFactoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoring.swift; sourceTree = "<group>"; };
@@ -335,6 +337,14 @@
 				E801ED6A2ACEF54700414CC5 /* NavigationController+.swift */,
 			);
 			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		E8B653F72AD55C78007A469C /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				E8B653F82AD55C95007A469C /* Node.swift */,
+			);
+			path = DataStructure;
 			sourceTree = "<group>";
 		};
 		E8C42DB22ABAF91B009075FB /* CoordinatorProtocols */ = {
@@ -582,6 +592,7 @@
 		E8C42E292ABC4E08009075FB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E8B653F72AD55C78007A469C /* DataStructure */,
 				E8C42E2A2ABC4E0F009075FB /* Types */,
 			);
 			path = Main;
@@ -1150,6 +1161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B653F92AD55C95007A469C /* Node.swift in Sources */,
 				E8C42E202ABC4DF3009075FB /* MAFoundation.docc in Sources */,
 				E801ED632ACEF0BD00414CC5 /* WeakReference.swift in Sources */,
 			);

@@ -105,19 +105,23 @@ extension ApplicationRouter: Routable {
     }
     
     public func subscribe(_ listener: LifeCycleListener) {
-        <#code#>
+        listeners.append(WeakReference(listener))
     }
     
     public func isLast(module: Presentable) -> Bool {
-        <#code#>
+        return rootController?.viewControllers.last === module.toPresent
     }
     
     public func isVisible(_ module: Presentable) -> Bool {
-        <#code#>
+        guard module.toPresent.view.window != nil, module.toPresent.isViewLoaded else {
+            return false
+        }
+
+        return rootController?.topViewController === module.toPresent && rootController?.presentedViewController == nil
     }
     
     public var isModallyPresented: Bool {
-        <#code#>
+        rootController?.presentingViewController == nil
     }
     
     private func dismiss(viewController: UIViewController, animated: Bool, count: UInt, completion: (() -> Void)?) throws {
