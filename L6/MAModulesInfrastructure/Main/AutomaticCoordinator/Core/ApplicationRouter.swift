@@ -188,3 +188,75 @@ private extension ApplicationRouter {
         return number
     }
 }
+
+extension ApplicationRouter: UINavigationControllerDelegate {
+    public func navigationController(
+        _: UINavigationController,
+        animationControllerFor operation: UINavigationController.Operation,
+        from _: UIViewController,
+        to _: UIViewController
+    ) -> UIViewControllerAnimatedTransitioning? {
+        defer {
+            pushTransition = nil
+            popTransition = nil
+        }
+        switch operation {
+        case .push:
+            return pushTransition?.animator
+
+        case .pop:
+            return popTransition?.animator
+
+        case .none:
+            return nil
+
+        @unknown default: return nil
+        }
+    }
+
+    public func navigationController(
+        _ navigationController: UINavigationController,
+        willShow _: UIViewController,
+        animated _: Bool
+    ) {
+        navigationController.topViewController?.transitionCoordinator?.notifyWhenInteractionChanges { context in
+            if !context.isCancelled {
+                if let fromViewController = context.viewController(forKey: .from),
+                   let swipeController = fromViewController as? ScreenSwiping {
+                    swipeController.didSwipeViewController()
+                }
+
+                self.lastListener?.decrement()
+            }
+        }
+    }
+}
+// MARK: - UIAdaptivePresentationControllerDelegate
+
+extension ApplicationRouter: UIAdaptivePresentationControllerDelegate {
+    public func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        /*
+         Важно!
+         Если модуль который дисмиссится - UINavigationController, то необходимо вызвать dismissNotify
+         Если модуль который дисмиссится - UIViewController, то необходимо вызвать decrement
+         Почему? см. presentModule
+         */
+        if let navController = presentationController.presentedViewController as? UINavigationController {
+            if let lastController = (navController.viewControllers.last as? ScreenSwiping) {
+                lastController.didDismissBySwipe()
+            }
+
+            lastListener?.dismissNotify(event: .uikit)
+        } else {
+            if let lastController = presentationController.presentedViewController as? ScreenSwiping {
+                lastController.didDismissBySwipe()
+            }
+            lastListener?.decrement()
+        }
+    }
+
+    public func adaptivePresentationStyle(_: UIPresentationController) -> UIModalPresentationStyle {
+        return lastPresented?.modalPresentationStyle ?? .automatic
+    }
+}
+

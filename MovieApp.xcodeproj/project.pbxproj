@@ -14,6 +14,26 @@
 		E8B653F92AD55C95007A469C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653F82AD55C95007A469C /* Node.swift */; };
 		E8B653FC2AD561A8007A469C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653FB2AD561A8007A469C /* Logger.swift */; };
 		E8B653FF2AD5621A007A469C /* Macro+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653FE2AD5621A007A469C /* Macro+.swift */; };
+		E8B654012AD5CF50007A469C /* AnyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654002AD5CF50007A469C /* AnyCoordinator.swift */; };
+		E8B654032AD5CF7C007A469C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654022AD5CF7C007A469C /* Coordinator.swift */; };
+		E8B654062AD5D163007A469C /* ApplicationWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654052AD5D163007A469C /* ApplicationWindow.swift */; };
+		E8B654092AD6AED9007A469C /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654082AD6AED9007A469C /* CoordinatorFactory.swift */; };
+		E8B6540C2AD6B022007A469C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6540B2AD6B022007A469C /* ApplicationCoordinator.swift */; };
+		E8B654172AD6B44F007A469C /* MAServices.docc in Sources */ = {isa = PBXBuildFile; fileRef = E8B654162AD6B44F007A469C /* MAServices.docc */; };
+		E8B6541D2AD6B44F007A469C /* MAServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B654132AD6B44F007A469C /* MAServices.framework */; };
+		E8B654252AD6B44F007A469C /* MAServices.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B654152AD6B44F007A469C /* MAServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B654282AD6B450007A469C /* MAServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B654132AD6B44F007A469C /* MAServices.framework */; };
+		E8B654292AD6B450007A469C /* MAServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8B654132AD6B44F007A469C /* MAServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8B654332AD6B618007A469C /* ConfigurationServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654322AD6B618007A469C /* ConfigurationServicing.swift */; };
+		E8B654372AD6B9E6007A469C /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654352AD6B726007A469C /* AppConfig.swift */; };
+		E8B654392AD6B9F3007A469C /* AppConfigAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654382AD6B9F3007A469C /* AppConfigAuthentication.swift */; };
+		E8B6543B2AD6BA85007A469C /* AppConfigContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6543A2AD6BA85007A469C /* AppConfigContacts.swift */; };
+		E8B6543D2AD6C299007A469C /* AppConfigVersions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6543C2AD6C299007A469C /* AppConfigVersions.swift */; };
+		E8B654402AD6C5FB007A469C /* StartupCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6543F2AD6C5FB007A469C /* StartupCoordinatorOutput.swift */; };
+		E8B654422AD6C614007A469C /* StartupCoordinatorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654412AD6C614007A469C /* StartupCoordinatorResult.swift */; };
+		E8B654452AD6CB45007A469C /* TabBarCoordinatorDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654442AD6CB45007A469C /* TabBarCoordinatorDeepLink.swift */; };
+		E8B654472AD6CBCD007A469C /* TabBarCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654462AD6CBCD007A469C /* TabBarCoordinatorOutput.swift */; };
+		E8B654492AD6CBF8007A469C /* TabBarCoordinatorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654482AD6CBF8007A469C /* TabBarCoordinatorResult.swift */; };
 		E8C42DB42ABAF967009075FB /* CoordinatorFactoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */; };
 		E8C42DB82ABAFAC5009075FB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DB72ABAFAC5009075FB /* main.swift */; };
 		E8C42DBC2ABAFF55009075FB /* ModulesFactoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DBB2ABAFF55009075FB /* ModulesFactoring.swift */; };
@@ -86,6 +106,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = E8C42E1B2ABC4DF3009075FB;
 			remoteInfo = MAFoundation;
+		};
+		E8B6541E2AD6B44F007A469C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8DD30A92AB46C5A006954A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B654122AD6B44F007A469C;
+			remoteInfo = MAServices;
+		};
+		E8B654202AD6B44F007A469C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8DD30A92AB46C5A006954A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8DD30B02AB46C5A006954A7;
+			remoteInfo = MovieApp;
+		};
+		E8B654262AD6B450007A469C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8DD30A92AB46C5A006954A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B654122AD6B44F007A469C;
+			remoteInfo = MAServices;
 		};
 		E8C42DE22ABB0CCE009075FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -179,6 +220,7 @@
 			files = (
 				E8DD31032AB47C2A006954A7 /* MAModulesInfrastructure.framework in Embed Frameworks */,
 				E8DD31232AB482C5006954A7 /* MAUIKit.framework in Embed Frameworks */,
+				E8B654292AD6B450007A469C /* MAServices.framework in Embed Frameworks */,
 				E8DD314B2AB49077006954A7 /* MADependencies.framework in Embed Frameworks */,
 				E8C42E252ABC4DF3009075FB /* MAFoundation.framework in Embed Frameworks */,
 				E8C42DE52ABB0CCE009075FB /* MADomainEntites.framework in Embed Frameworks */,
@@ -194,6 +236,25 @@
 		E8B653F82AD55C95007A469C /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		E8B653FB2AD561A8007A469C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E8B653FE2AD5621A007A469C /* Macro+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Macro+.swift"; sourceTree = "<group>"; };
+		E8B654002AD5CF50007A469C /* AnyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCoordinator.swift; sourceTree = "<group>"; };
+		E8B654022AD5CF7C007A469C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E8B654052AD5D163007A469C /* ApplicationWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationWindow.swift; sourceTree = "<group>"; };
+		E8B654082AD6AED9007A469C /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		E8B6540B2AD6B022007A469C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		E8B654132AD6B44F007A469C /* MAServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B654152AD6B44F007A469C /* MAServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAServices.h; sourceTree = "<group>"; };
+		E8B654162AD6B44F007A469C /* MAServices.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MAServices.docc; sourceTree = "<group>"; };
+		E8B6541C2AD6B44F007A469C /* MAServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B654322AD6B618007A469C /* ConfigurationServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationServicing.swift; sourceTree = "<group>"; };
+		E8B654352AD6B726007A469C /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		E8B654382AD6B9F3007A469C /* AppConfigAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigAuthentication.swift; sourceTree = "<group>"; };
+		E8B6543A2AD6BA85007A469C /* AppConfigContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigContacts.swift; sourceTree = "<group>"; };
+		E8B6543C2AD6C299007A469C /* AppConfigVersions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigVersions.swift; sourceTree = "<group>"; };
+		E8B6543F2AD6C5FB007A469C /* StartupCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupCoordinatorOutput.swift; sourceTree = "<group>"; };
+		E8B654412AD6C614007A469C /* StartupCoordinatorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupCoordinatorResult.swift; sourceTree = "<group>"; };
+		E8B654442AD6CB45007A469C /* TabBarCoordinatorDeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorDeepLink.swift; sourceTree = "<group>"; };
+		E8B654462AD6CBCD007A469C /* TabBarCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorOutput.swift; sourceTree = "<group>"; };
+		E8B654482AD6CBF8007A469C /* TabBarCoordinatorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorResult.swift; sourceTree = "<group>"; };
 		E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoring.swift; sourceTree = "<group>"; };
 		E8C42DB72ABAFAC5009075FB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E8C42DBB2ABAFF55009075FB /* ModulesFactoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoring.swift; sourceTree = "<group>"; };
@@ -259,6 +320,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E8B654102AD6B44F007A469C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B654192AD6B44F007A469C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B6541D2AD6B44F007A469C /* MAServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8C42DD92ABB0CCE009075FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +355,7 @@
 			files = (
 				E8DD31022AB47C2A006954A7 /* MAModulesInfrastructure.framework in Frameworks */,
 				E8DD31222AB482C5006954A7 /* MAUIKit.framework in Frameworks */,
+				E8B654282AD6B450007A469C /* MAServices.framework in Frameworks */,
 				E8DD314A2AB49077006954A7 /* MADependencies.framework in Frameworks */,
 				E8C42E242ABC4DF3009075FB /* MAFoundation.framework in Frameworks */,
 				E8C42DE42ABB0CCE009075FB /* MADomainEntites.framework in Frameworks */,
@@ -367,10 +444,99 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		E8B654042AD5D0A4007A469C /* L5 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = L5;
+			sourceTree = "<group>";
+		};
+		E8B654072AD6AEB9007A469C /* CoordinatorsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654082AD6AED9007A469C /* CoordinatorFactory.swift */,
+			);
+			path = CoordinatorsFactory;
+			sourceTree = "<group>";
+		};
+		E8B6540A2AD6B007007A469C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E8B6540B2AD6B022007A469C /* ApplicationCoordinator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E8B6540D2AD6B32F007A469C /* L4 */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654142AD6B44F007A469C /* MAServices */,
+			);
+			path = L4;
+			sourceTree = "<group>";
+		};
+		E8B654142AD6B44F007A469C /* MAServices */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654302AD6B472007A469C /* Main */,
+				E8B654152AD6B44F007A469C /* MAServices.h */,
+				E8B654162AD6B44F007A469C /* MAServices.docc */,
+			);
+			path = MAServices;
+			sourceTree = "<group>";
+		};
+		E8B654302AD6B472007A469C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654312AD6B5CD007A469C /* ConfiguratuonService */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E8B654312AD6B5CD007A469C /* ConfiguratuonService */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654322AD6B618007A469C /* ConfigurationServicing.swift */,
+			);
+			path = ConfiguratuonService;
+			sourceTree = "<group>";
+		};
+		E8B654342AD6B6F2007A469C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654352AD6B726007A469C /* AppConfig.swift */,
+				E8B654382AD6B9F3007A469C /* AppConfigAuthentication.swift */,
+				E8B6543A2AD6BA85007A469C /* AppConfigContacts.swift */,
+				E8B6543C2AD6C299007A469C /* AppConfigVersions.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E8B6543E2AD6C5D8007A469C /* StartupCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E8B6543F2AD6C5FB007A469C /* StartupCoordinatorOutput.swift */,
+				E8B654412AD6C614007A469C /* StartupCoordinatorResult.swift */,
+			);
+			path = StartupCoordinator;
+			sourceTree = "<group>";
+		};
+		E8B654432AD6CB1D007A469C /* TabBarCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654442AD6CB45007A469C /* TabBarCoordinatorDeepLink.swift */,
+				E8B654462AD6CBCD007A469C /* TabBarCoordinatorOutput.swift */,
+				E8B654482AD6CBF8007A469C /* TabBarCoordinatorResult.swift */,
+			);
+			path = TabBarCoordinator;
+			sourceTree = "<group>";
+		};
 		E8C42DB22ABAF91B009075FB /* CoordinatorProtocols */ = {
 			isa = PBXGroup;
 			children = (
+				E8B654432AD6CB1D007A469C /* TabBarCoordinator */,
 				E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */,
+				E8B6543E2AD6C5D8007A469C /* StartupCoordinator */,
 			);
 			path = CoordinatorProtocols;
 			sourceTree = "<group>";
@@ -391,6 +557,7 @@
 				E8DD30B42AB46C5A006954A7 /* AppDelegate.swift */,
 				E8DD31382AB48F07006954A7 /* Application.swift */,
 				E8DD313A2AB48FC4006954A7 /* ApplicationDecorator.swift */,
+				E8B654052AD5D163007A469C /* ApplicationWindow.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -398,6 +565,8 @@
 		E8C42DB92ABAFC68009075FB /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				E8B6540A2AD6B007007A469C /* Common */,
+				E8B654072AD6AEB9007A469C /* CoordinatorsFactory */,
 				E8C42DBA2ABAFC79009075FB /* ModulesFactrory */,
 			);
 			path = Coordinators;
@@ -437,6 +606,7 @@
 				E8C42DC22ABB0683009075FB /* Presentable.swift */,
 				E8C42DF12ABB1B40009075FB /* Routable.swift */,
 				E8C42E052ABB26DA009075FB /* LifeCycleListener.swift */,
+				E8B654022AD5CF7C007A469C /* Coordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -537,6 +707,7 @@
 		E8C42DE92ABB0D12009075FB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E8B654342AD6B6F2007A469C /* Configuration */,
 				E8C42DEA2ABB0D3C009075FB /* UserFlowEntryPoint.swift */,
 			);
 			path = Main;
@@ -548,6 +719,7 @@
 				E8C42DEF2ABB1A65009075FB /* BaseCoordintator.swift */,
 				E8C42E032ABB25C4009075FB /* CloseModuleAction.swift */,
 				E8C42E072ABB278E009075FB /* ApplicationRouter.swift */,
+				E8B654002AD5CF50007A469C /* AnyCoordinator.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -631,12 +803,14 @@
 		E8DD30A82AB46C5A006954A7 = {
 			isa = PBXGroup;
 			children = (
+				E8DD30B32AB46C5A006954A7 /* MovieApp */,
 				E8C42E132ABC4D72009075FB /* L0 */,
 				E8C42DD52ABB0BB5009075FB /* L1 */,
-				E8DD313C2AB49027006954A7 /* L8 */,
 				E8DD31142AB4810B006954A7 /* L2 */,
+				E8B6540D2AD6B32F007A469C /* L4 */,
+				E8B654042AD5D0A4007A469C /* L5 */,
 				E8DD30E42AB479AB006954A7 /* L6 */,
-				E8DD30B32AB46C5A006954A7 /* MovieApp */,
+				E8DD313C2AB49027006954A7 /* L8 */,
 				E8DD30C52AB46C5B006954A7 /* MovieAppTests */,
 				E8DD30CF2AB46C5B006954A7 /* MovieAppUITests */,
 				E8DD30B22AB46C5A006954A7 /* Products */,
@@ -656,6 +830,8 @@
 				E8DD31422AB49076006954A7 /* MADependencies.framework */,
 				E8C42DDC2ABB0CCE009075FB /* MADomainEntites.framework */,
 				E8C42E1C2ABC4DF3009075FB /* MAFoundation.framework */,
+				E8B654132AD6B44F007A469C /* MAServices.framework */,
+				E8B6541C2AD6B44F007A469C /* MAServicesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -819,6 +995,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		E8B6540E2AD6B44F007A469C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B654252AD6B44F007A469C /* MAServices.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8C42DD72ABB0CCE009075FB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -862,6 +1046,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		E8B654122AD6B44F007A469C /* MAServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B6542A2AD6B450007A469C /* Build configuration list for PBXNativeTarget "MAServices" */;
+			buildPhases = (
+				E8B6540E2AD6B44F007A469C /* Headers */,
+				E8B6540F2AD6B44F007A469C /* Sources */,
+				E8B654102AD6B44F007A469C /* Frameworks */,
+				E8B654112AD6B44F007A469C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MAServices;
+			productName = MAServices;
+			productReference = E8B654132AD6B44F007A469C /* MAServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8B6541B2AD6B44F007A469C /* MAServicesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B6542D2AD6B450007A469C /* Build configuration list for PBXNativeTarget "MAServicesTests" */;
+			buildPhases = (
+				E8B654182AD6B44F007A469C /* Sources */,
+				E8B654192AD6B44F007A469C /* Frameworks */,
+				E8B6541A2AD6B44F007A469C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8B6541F2AD6B44F007A469C /* PBXTargetDependency */,
+				E8B654212AD6B44F007A469C /* PBXTargetDependency */,
+			);
+			name = MAServicesTests;
+			productName = MAServicesTests;
+			productReference = E8B6541C2AD6B44F007A469C /* MAServicesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E8C42DDB2ABB0CCE009075FB /* MADomainEntites */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8C42DE62ABB0CCF009075FB /* Build configuration list for PBXNativeTarget "MADomainEntites" */;
@@ -915,6 +1136,7 @@
 				E8DD31492AB49077006954A7 /* PBXTargetDependency */,
 				E8C42DE32ABB0CCE009075FB /* PBXTargetDependency */,
 				E8C42E232ABC4DF3009075FB /* PBXTargetDependency */,
+				E8B654272AD6B450007A469C /* PBXTargetDependency */,
 			);
 			name = MovieApp;
 			productName = MovieApp;
@@ -1040,9 +1262,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					E8B654122AD6B44F007A469C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					E8B6541B2AD6B44F007A469C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E8DD30B02AB46C5A006954A7;
+					};
 					E8C42DDB2ABB0CCE009075FB = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -1097,11 +1326,27 @@
 				E8DD31412AB49076006954A7 /* MADependencies */,
 				E8C42DDB2ABB0CCE009075FB /* MADomainEntites */,
 				E8C42E1B2ABC4DF3009075FB /* MAFoundation */,
+				E8B654122AD6B44F007A469C /* MAServices */,
+				E8B6541B2AD6B44F007A469C /* MAServicesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E8B654112AD6B44F007A469C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B6541A2AD6B44F007A469C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8C42DDA2ABB0CCE009075FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1170,12 +1415,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E8B6540F2AD6B44F007A469C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B654172AD6B44F007A469C /* MAServices.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B654182AD6B44F007A469C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8C42DD82ABB0CCE009075FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B654372AD6B9E6007A469C /* AppConfig.swift in Sources */,
 				E8C42DEB2ABB0D3C009075FB /* UserFlowEntryPoint.swift in Sources */,
+				E8B6543D2AD6C299007A469C /* AppConfigVersions.swift in Sources */,
+				E8B6543B2AD6BA85007A469C /* AppConfigContacts.swift in Sources */,
 				E8C42DE02ABB0CCE009075FB /* MADomainEntites.docc in Sources */,
+				E8B654392AD6B9F3007A469C /* AppConfigAuthentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1196,6 +1460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C42DBC2ABAFF55009075FB /* ModulesFactoring.swift in Sources */,
+				E8B654062AD5D163007A469C /* ApplicationWindow.swift in Sources */,
 				E8DD313B2AB48FC4006954A7 /* ApplicationDecorator.swift in Sources */,
 				E8C42DD42ABB0B54009075FB /* SplashScreenResult.swift in Sources */,
 				E8DD31392AB48F07006954A7 /* Application.swift in Sources */,
@@ -1203,6 +1468,9 @@
 				E8C42DED2ABB142C009075FB /* SplashScreenInput.swift in Sources */,
 				E8C42DB82ABAFAC5009075FB /* main.swift in Sources */,
 				E8DD30DF2AB475A8006954A7 /* AppDelegate.swift in Sources */,
+				E8B654092AD6AED9007A469C /* CoordinatorFactory.swift in Sources */,
+				E8B654332AD6B618007A469C /* ConfigurationServicing.swift in Sources */,
+				E8B6540C2AD6B022007A469C /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1228,19 +1496,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C42E042ABB25C4009075FB /* CloseModuleAction.swift in Sources */,
+				E8B654472AD6CBCD007A469C /* TabBarCoordinatorOutput.swift in Sources */,
 				E8C42DF72ABB1E53009075FB /* FadeAnimator.swift in Sources */,
 				E8DD30F12AB47C29006954A7 /* MAModulesInfrastructure.docc in Sources */,
+				E8B654452AD6CB45007A469C /* TabBarCoordinatorDeepLink.swift in Sources */,
 				E8C42DF52ABB1D9D009075FB /* Transition.swift in Sources */,
 				E8C42E082ABB278E009075FB /* ApplicationRouter.swift in Sources */,
+				E8B654012AD5CF50007A469C /* AnyCoordinator.swift in Sources */,
 				E8C42DC32ABB0683009075FB /* Presentable.swift in Sources */,
 				E8C42DF02ABB1A65009075FB /* BaseCoordintator.swift in Sources */,
+				E8B654032AD5CF7C007A469C /* Coordinator.swift in Sources */,
 				E8C42DC92ABB088C009075FB /* WebViewInput.swift in Sources */,
 				E8DD31372AB48C31006954A7 /* SystemNavigationController.swift in Sources */,
+				E8B654402AD6C5FB007A469C /* StartupCoordinatorOutput.swift in Sources */,
 				E8DD310D2AB47CBC006954A7 /* SystemHostingController.swift in Sources */,
+				E8B654422AD6C614007A469C /* StartupCoordinatorResult.swift in Sources */,
 				E8DD31132AB4805B006954A7 /* SystemHostingControllerInput.swift in Sources */,
 				E801ED6B2ACEF54700414CC5 /* NavigationController+.swift in Sources */,
 				E8C42DF22ABB1B40009075FB /* Routable.swift in Sources */,
 				E8C42DB42ABAF967009075FB /* CoordinatorFactoring.swift in Sources */,
+				E8B654492AD6CBF8007A469C /* TabBarCoordinatorResult.swift in Sources */,
 				E8C42DC72ABB07FA009075FB /* WebViewOutput.swift in Sources */,
 				E8C42DFD2ABB238C009075FB /* PresentAnimator.swift in Sources */,
 				E8C42DBF2ABB05E2009075FB /* CommonModuleFactoring.swift in Sources */,
@@ -1287,6 +1562,21 @@
 			isa = PBXTargetDependency;
 			target = E8C42E1B2ABC4DF3009075FB /* MAFoundation */;
 			targetProxy = E801ED662ACEF2AD00414CC5 /* PBXContainerItemProxy */;
+		};
+		E8B6541F2AD6B44F007A469C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B654122AD6B44F007A469C /* MAServices */;
+			targetProxy = E8B6541E2AD6B44F007A469C /* PBXContainerItemProxy */;
+		};
+		E8B654212AD6B44F007A469C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8DD30B02AB46C5A006954A7 /* MovieApp */;
+			targetProxy = E8B654202AD6B44F007A469C /* PBXContainerItemProxy */;
+		};
+		E8B654272AD6B450007A469C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B654122AD6B44F007A469C /* MAServices */;
+			targetProxy = E8B654262AD6B450007A469C /* PBXContainerItemProxy */;
 		};
 		E8C42DE32ABB0CCE009075FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1341,6 +1631,130 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E8B6542B2AD6B450007A469C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorbunov.MovieApp.MAServices;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8B6542C2AD6B450007A469C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorbunov.MovieApp.MAServices;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8B6542E2AD6B450007A469C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorbunov.MovieApp.MAServicesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieApp";
+			};
+			name = Debug;
+		};
+		E8B6542F2AD6B450007A469C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorbunov.MovieApp.MAServicesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		E8C42DE72ABB0CCF009075FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2031,6 +2445,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E8B6542A2AD6B450007A469C /* Build configuration list for PBXNativeTarget "MAServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B6542B2AD6B450007A469C /* Debug */,
+				E8B6542C2AD6B450007A469C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B6542D2AD6B450007A469C /* Build configuration list for PBXNativeTarget "MAServicesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B6542E2AD6B450007A469C /* Debug */,
+				E8B6542F2AD6B450007A469C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E8C42DE62ABB0CCF009075FB /* Build configuration list for PBXNativeTarget "MADomainEntites" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

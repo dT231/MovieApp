@@ -7,6 +7,7 @@
 
 import MADependencies
 import MAModulesInfrastructure
+import UIKit
 
 protocol ApplicationProtocol: AnyObject {
     var dependencyFactory: DependencyFactoryProtocol { get }
@@ -16,19 +17,29 @@ protocol ApplicationProtocol: AnyObject {
 }
 
 open class Application: ApplicationProtocol {
+ 
     var dependencyFactory: DependencyFactoryProtocol
     
-    var startupDecorators: [ApplicationDecorator] = []
+    // MARK: Service
+//    private let logoutManager:
+//    private let authOperationManager: AuthOperationManaging
     
-    func start() {
-        <#code#>
-    }
     
     // MARK: Appropriated objects
     
     private let coordinatorFactory: CoordinatorFactoring
     private let moduleFactory: ModulesFactoring
     
-    private var applicationCoordinator: (baseCoordinator: BaseCoordinator, AnyCoordinator)
+    private var applicationCoordinator: BaseCoordinator
+    private weak var window: ApplicationWindow?
     
+    init(
+        window: inout ApplicationWindow?
+    ) {
+        window = ApplicationWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        self.dependencyFactory = DependencyFactory()
+        self.moduleFactory = ModulesFactory()
+        self.coordinatorFactory = CoordinatorFactory()
+    }
 }
