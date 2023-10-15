@@ -32,7 +32,7 @@ final class ApplicationCoordinator: BaseCoordinator {
 
 // MARK: - Private
 
-private extension ApplicationDecorator {
+private extension ApplicationCoordinator {
     func start() {
         openStartupCoordinator()
     }

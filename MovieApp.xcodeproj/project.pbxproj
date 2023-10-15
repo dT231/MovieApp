@@ -34,6 +34,16 @@
 		E8B654452AD6CB45007A469C /* TabBarCoordinatorDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654442AD6CB45007A469C /* TabBarCoordinatorDeepLink.swift */; };
 		E8B654472AD6CBCD007A469C /* TabBarCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654462AD6CBCD007A469C /* TabBarCoordinatorOutput.swift */; };
 		E8B654492AD6CBF8007A469C /* TabBarCoordinatorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654482AD6CBF8007A469C /* TabBarCoordinatorResult.swift */; };
+		E8B6544D2ADC034D007A469C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6544C2ADC034D007A469C /* TabBarCoordinator.swift */; };
+		E8B654502ADC0447007A469C /* TabFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6544F2ADC0447007A469C /* TabFactoryProtocol.swift */; };
+		E8B654552ADC04ED007A469C /* MATabBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654542ADC04ED007A469C /* MATabBarItemModel.swift */; };
+		E8B654572ADC0548007A469C /* SMTabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654562ADC0548007A469C /* SMTabBarItemType.swift */; };
+		E8B654592ADC05EF007A469C /* RootTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654582ADC05EF007A469C /* RootTab.swift */; };
+		E8B6545C2ADC067E007A469C /* AnimationTabItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6545B2ADC067E007A469C /* AnimationTabItemInfo.swift */; };
+		E8B6545E2ADC07CC007A469C /* TabBarManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6545D2ADC07CC007A469C /* TabBarManagerProtocol.swift */; };
+		E8B654602ADC080E007A469C /* TabBarManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6545F2ADC080E007A469C /* TabBarManagerDelegate.swift */; };
+		E8B654642ADC09D9007A469C /* TabFrameProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654632ADC09D9007A469C /* TabFrameProviderProtocol.swift */; };
+		E8B654662ADC0A2C007A469C /* TabBarAppearanceManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654652ADC0A2C007A469C /* TabBarAppearanceManagerProtocol.swift */; };
 		E8C42DB42ABAF967009075FB /* CoordinatorFactoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */; };
 		E8C42DB82ABAFAC5009075FB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DB72ABAFAC5009075FB /* main.swift */; };
 		E8C42DBC2ABAFF55009075FB /* ModulesFactoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DBB2ABAFF55009075FB /* ModulesFactoring.swift */; };
@@ -255,6 +265,16 @@
 		E8B654442AD6CB45007A469C /* TabBarCoordinatorDeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorDeepLink.swift; sourceTree = "<group>"; };
 		E8B654462AD6CBCD007A469C /* TabBarCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorOutput.swift; sourceTree = "<group>"; };
 		E8B654482AD6CBF8007A469C /* TabBarCoordinatorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorResult.swift; sourceTree = "<group>"; };
+		E8B6544C2ADC034D007A469C /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		E8B6544F2ADC0447007A469C /* TabFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFactoryProtocol.swift; sourceTree = "<group>"; };
+		E8B654542ADC04ED007A469C /* MATabBarItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATabBarItemModel.swift; sourceTree = "<group>"; };
+		E8B654562ADC0548007A469C /* SMTabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTabBarItemType.swift; sourceTree = "<group>"; };
+		E8B654582ADC05EF007A469C /* RootTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTab.swift; sourceTree = "<group>"; };
+		E8B6545B2ADC067E007A469C /* AnimationTabItemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTabItemInfo.swift; sourceTree = "<group>"; };
+		E8B6545D2ADC07CC007A469C /* TabBarManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarManagerProtocol.swift; sourceTree = "<group>"; };
+		E8B6545F2ADC080E007A469C /* TabBarManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarManagerDelegate.swift; sourceTree = "<group>"; };
+		E8B654632ADC09D9007A469C /* TabFrameProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFrameProviderProtocol.swift; sourceTree = "<group>"; };
+		E8B654652ADC0A2C007A469C /* TabBarAppearanceManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAppearanceManagerProtocol.swift; sourceTree = "<group>"; };
 		E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoring.swift; sourceTree = "<group>"; };
 		E8C42DB72ABAFAC5009075FB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E8C42DBB2ABAFF55009075FB /* ModulesFactoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoring.swift; sourceTree = "<group>"; };
@@ -531,11 +551,88 @@
 			path = TabBarCoordinator;
 			sourceTree = "<group>";
 		};
+		E8B6544A2ADC0308007A469C /* TabBarCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E8B6544E2ADC041F007A469C /* Factories */,
+				E8B6544B2ADC032C007A469C /* Managers */,
+			);
+			path = TabBarCoordinator;
+			sourceTree = "<group>";
+		};
+		E8B6544B2ADC032C007A469C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E8B6544C2ADC034D007A469C /* TabBarCoordinator.swift */,
+				E8B6545D2ADC07CC007A469C /* TabBarManagerProtocol.swift */,
+				E8B6545F2ADC080E007A469C /* TabBarManagerDelegate.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E8B6544E2ADC041F007A469C /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E8B6544F2ADC0447007A469C /* TabFactoryProtocol.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E8B654512ADC047A007A469C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654522ADC0494007A469C /* TabBar */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B654522ADC0494007A469C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654532ADC04A2007A469C /* Base */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E8B654532ADC04A2007A469C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654542ADC04ED007A469C /* MATabBarItemModel.swift */,
+				E8B654562ADC0548007A469C /* SMTabBarItemType.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E8B6545A2ADC064A007A469C /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654582ADC05EF007A469C /* RootTab.swift */,
+				E8B6545B2ADC067E007A469C /* AnimationTabItemInfo.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		E8B654612ADC09AD007A469C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654622ADC09BF007A469C /* TabFrameProvider */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E8B654622ADC09BF007A469C /* TabFrameProvider */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654632ADC09D9007A469C /* TabFrameProviderProtocol.swift */,
+			);
+			path = TabFrameProvider;
+			sourceTree = "<group>";
+		};
 		E8C42DB22ABAF91B009075FB /* CoordinatorProtocols */ = {
 			isa = PBXGroup;
 			children = (
-				E8B654432AD6CB1D007A469C /* TabBarCoordinator */,
 				E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */,
+				E8B654432AD6CB1D007A469C /* TabBarCoordinator */,
 				E8B6543E2AD6C5D8007A469C /* StartupCoordinator */,
 			);
 			path = CoordinatorProtocols;
@@ -565,6 +662,7 @@
 		E8C42DB92ABAFC68009075FB /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				E8B6544A2ADC0308007A469C /* TabBarCoordinator */,
 				E8B6540A2AD6B007007A469C /* Common */,
 				E8B654072AD6AEB9007A469C /* CoordinatorsFactory */,
 				E8C42DBA2ABAFC79009075FB /* ModulesFactrory */,
@@ -591,6 +689,7 @@
 		E8C42DC02ABB0646009075FB /* AutomaticCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				E8B6545A2ADC064A007A469C /* TabBarController */,
 				E801ED692ACEF52300414CC5 /* NavigationController */,
 				E8C42DFE2ABB2468009075FB /* Common */,
 				E8C42DF32ABB1D77009075FB /* Transitions */,
@@ -607,6 +706,7 @@
 				E8C42DF12ABB1B40009075FB /* Routable.swift */,
 				E8C42E052ABB26DA009075FB /* LifeCycleListener.swift */,
 				E8B654022AD5CF7C007A469C /* Coordinator.swift */,
+				E8B654652ADC0A2C007A469C /* TabBarAppearanceManagerProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -894,6 +994,7 @@
 		E8DD310B2AB47C81006954A7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E8B654612ADC09AD007A469C /* Helpers */,
 				E8C42DC02ABB0646009075FB /* AutomaticCoordinator */,
 				E8C42DC42ABB07CB009075FB /* ModulesInterfaces */,
 				E8C42DBD2ABAFFDD009075FB /* ModulesFactory */,
@@ -932,6 +1033,7 @@
 		E8DD31292AB482E7006954A7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E8B654512ADC047A007A469C /* Views */,
 				E8C42E0E2ABC496B009075FB /* Extensions */,
 				E8C42E092ABC39F0009075FB /* Protocols */,
 				E8DD31272AB482E0006954A7 /* Constants.swift */,
@@ -1465,7 +1567,11 @@
 				E8C42DD42ABB0B54009075FB /* SplashScreenResult.swift in Sources */,
 				E8DD31392AB48F07006954A7 /* Application.swift in Sources */,
 				E8C42DD22ABB0AF8009075FB /* SplashScreenOutput.swift in Sources */,
+				E8B6544D2ADC034D007A469C /* TabBarCoordinator.swift in Sources */,
 				E8C42DED2ABB142C009075FB /* SplashScreenInput.swift in Sources */,
+				E8B654602ADC080E007A469C /* TabBarManagerDelegate.swift in Sources */,
+				E8B6545E2ADC07CC007A469C /* TabBarManagerProtocol.swift in Sources */,
+				E8B654502ADC0447007A469C /* TabFactoryProtocol.swift in Sources */,
 				E8C42DB82ABAFAC5009075FB /* main.swift in Sources */,
 				E8DD30DF2AB475A8006954A7 /* AppDelegate.swift in Sources */,
 				E8B654092AD6AED9007A469C /* CoordinatorFactory.swift in Sources */,
@@ -1510,13 +1616,17 @@
 				E8DD31372AB48C31006954A7 /* SystemNavigationController.swift in Sources */,
 				E8B654402AD6C5FB007A469C /* StartupCoordinatorOutput.swift in Sources */,
 				E8DD310D2AB47CBC006954A7 /* SystemHostingController.swift in Sources */,
+				E8B654662ADC0A2C007A469C /* TabBarAppearanceManagerProtocol.swift in Sources */,
 				E8B654422AD6C614007A469C /* StartupCoordinatorResult.swift in Sources */,
 				E8DD31132AB4805B006954A7 /* SystemHostingControllerInput.swift in Sources */,
+				E8B6545C2ADC067E007A469C /* AnimationTabItemInfo.swift in Sources */,
 				E801ED6B2ACEF54700414CC5 /* NavigationController+.swift in Sources */,
 				E8C42DF22ABB1B40009075FB /* Routable.swift in Sources */,
+				E8B654592ADC05EF007A469C /* RootTab.swift in Sources */,
 				E8C42DB42ABAF967009075FB /* CoordinatorFactoring.swift in Sources */,
 				E8B654492AD6CBF8007A469C /* TabBarCoordinatorResult.swift in Sources */,
 				E8C42DC72ABB07FA009075FB /* WebViewOutput.swift in Sources */,
+				E8B654642ADC09D9007A469C /* TabFrameProviderProtocol.swift in Sources */,
 				E8C42DFD2ABB238C009075FB /* PresentAnimator.swift in Sources */,
 				E8C42DBF2ABB05E2009075FB /* CommonModuleFactoring.swift in Sources */,
 				E8C42E022ABB2545009075FB /* ModalTransitionStyle.swift in Sources */,
@@ -1540,8 +1650,10 @@
 			files = (
 				E8C42E122ABC49C9009075FB /* WindowHierarchyHelping.swift in Sources */,
 				E8C42E112ABC49C4009075FB /* WindowGetting.swift in Sources */,
+				E8B654572ADC0548007A469C /* SMTabBarItemType.swift in Sources */,
 				E8DD311E2AB482C5006954A7 /* MAUIKit.docc in Sources */,
 				E8DD31282AB482E0006954A7 /* Constants.swift in Sources */,
+				E8B654552ADC04ED007A469C /* MATabBarItemModel.swift in Sources */,
 				E8C42E102ABC4991009075FB /* UIApplication+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
