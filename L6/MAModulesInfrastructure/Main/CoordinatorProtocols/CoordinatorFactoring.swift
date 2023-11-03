@@ -18,4 +18,12 @@ public protocol CoordinatorFactoring {
         parent: BaseCoordinator,
         output: TabBarCoordinatorOutput
     ) -> AnyCoordinator<TabBarCoordinatorDeepLink>
+    
+    func makeMainFlowCoordinator(
+        output: MainFlowCoordinatorOutput,
+        tabBarAppearanceManager: TabBarAppearanceManagerProtocol
+    ) -> (
+        view: Presentable,
+        input: MainFlowCoordinatorInput
+    )
 }

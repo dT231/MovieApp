@@ -43,8 +43,36 @@ extension TabBarCoordinator: Coordinator {
 
 private extension TabBarCoordinator {
     func prepareTabs(deepLink: DeepLink) {
+        let presentables = [
+            makeMainTab(deepLink: deepLink),
+            makeCatalogTab(),
+            makeProfileTab()
+        ]
         
+        tabBarManager.setPresentable(presentables, animated: false)
+        
+        router.setRootModule(tabBarManager.tabBarPresentable, transition: .fade)
     }
+    
+    func makeMainTab(deepLink: DeepLink) -> TabBarManagerProtocol.PresentableTab {
+        let unit = coordinatorFactory.makeMainFlowCoordinator(
+            output: self,
+            tabBarAppearanceManager: tabBarManager
+        )
+        
+        switch deepLink {
+        case .appLaunch:
+            
+        case .afterInterestSelection:
+            
+        }
+    }
+    func makeCatalogTab() -> TabBarManagerProtocol.PresentableTab {
+    }
+    
+    func makeProfileTab() -> TabBarManagerProtocol.PresentableTab {
+    }
+    
 }
 
 extension TabBarCoordinator: TabBarManagerDelegate {
@@ -55,6 +83,10 @@ extension TabBarCoordinator: TabBarManagerDelegate {
     func didSelectTab(tab: MAModulesInfrastructure.RootTab, previousTab: MAModulesInfrastructure.RootTab) {
         <#code#>
     }
-    
-    
+}
+
+extension TabBarCoordinator: MainFlowCoordinatorOutput {
+    func receiveResults(_ receive: MAModulesInfrastructure.MainFlowCoordinatorResult) {
+        <#code#>
+    }
 }

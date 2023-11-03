@@ -44,6 +44,10 @@
 		E8B654602ADC080E007A469C /* TabBarManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6545F2ADC080E007A469C /* TabBarManagerDelegate.swift */; };
 		E8B654642ADC09D9007A469C /* TabFrameProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654632ADC09D9007A469C /* TabFrameProviderProtocol.swift */; };
 		E8B654662ADC0A2C007A469C /* TabBarAppearanceManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654652ADC0A2C007A469C /* TabBarAppearanceManagerProtocol.swift */; };
+		E8B654692ADC18D3007A469C /* MainFlowCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654682ADC18D3007A469C /* MainFlowCoordinatorOutput.swift */; };
+		E8B6546B2ADC18DF007A469C /* MainFlowCoordinatorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6546A2ADC18DF007A469C /* MainFlowCoordinatorInput.swift */; };
+		E8B6546D2ADC18EA007A469C /* MainFlowCoordinatorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6546C2ADC18EA007A469C /* MainFlowCoordinatorResult.swift */; };
+		E8B6546F2ADC1E53007A469C /* MainFlowCoordinatorDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6546E2ADC1E53007A469C /* MainFlowCoordinatorDeepLink.swift */; };
 		E8C42DB42ABAF967009075FB /* CoordinatorFactoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */; };
 		E8C42DB82ABAFAC5009075FB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DB72ABAFAC5009075FB /* main.swift */; };
 		E8C42DBC2ABAFF55009075FB /* ModulesFactoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C42DBB2ABAFF55009075FB /* ModulesFactoring.swift */; };
@@ -275,6 +279,10 @@
 		E8B6545F2ADC080E007A469C /* TabBarManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarManagerDelegate.swift; sourceTree = "<group>"; };
 		E8B654632ADC09D9007A469C /* TabFrameProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFrameProviderProtocol.swift; sourceTree = "<group>"; };
 		E8B654652ADC0A2C007A469C /* TabBarAppearanceManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAppearanceManagerProtocol.swift; sourceTree = "<group>"; };
+		E8B654682ADC18D3007A469C /* MainFlowCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinatorOutput.swift; sourceTree = "<group>"; };
+		E8B6546A2ADC18DF007A469C /* MainFlowCoordinatorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinatorInput.swift; sourceTree = "<group>"; };
+		E8B6546C2ADC18EA007A469C /* MainFlowCoordinatorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinatorResult.swift; sourceTree = "<group>"; };
+		E8B6546E2ADC1E53007A469C /* MainFlowCoordinatorDeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinatorDeepLink.swift; sourceTree = "<group>"; };
 		E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoring.swift; sourceTree = "<group>"; };
 		E8C42DB72ABAFAC5009075FB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E8C42DBB2ABAFF55009075FB /* ModulesFactoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoring.swift; sourceTree = "<group>"; };
@@ -628,10 +636,22 @@
 			path = TabFrameProvider;
 			sourceTree = "<group>";
 		};
+		E8B654672ADC18A8007A469C /* MainFlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E8B654682ADC18D3007A469C /* MainFlowCoordinatorOutput.swift */,
+				E8B6546A2ADC18DF007A469C /* MainFlowCoordinatorInput.swift */,
+				E8B6546C2ADC18EA007A469C /* MainFlowCoordinatorResult.swift */,
+				E8B6546E2ADC1E53007A469C /* MainFlowCoordinatorDeepLink.swift */,
+			);
+			path = MainFlowCoordinator;
+			sourceTree = "<group>";
+		};
 		E8C42DB22ABAF91B009075FB /* CoordinatorProtocols */ = {
 			isa = PBXGroup;
 			children = (
 				E8C42DB32ABAF967009075FB /* CoordinatorFactoring.swift */,
+				E8B654672ADC18A8007A469C /* MainFlowCoordinator */,
 				E8B654432AD6CB1D007A469C /* TabBarCoordinator */,
 				E8B6543E2AD6C5D8007A469C /* StartupCoordinator */,
 			);
@@ -1614,15 +1634,18 @@
 				E8B654032AD5CF7C007A469C /* Coordinator.swift in Sources */,
 				E8C42DC92ABB088C009075FB /* WebViewInput.swift in Sources */,
 				E8DD31372AB48C31006954A7 /* SystemNavigationController.swift in Sources */,
+				E8B6546F2ADC1E53007A469C /* MainFlowCoordinatorDeepLink.swift in Sources */,
 				E8B654402AD6C5FB007A469C /* StartupCoordinatorOutput.swift in Sources */,
 				E8DD310D2AB47CBC006954A7 /* SystemHostingController.swift in Sources */,
 				E8B654662ADC0A2C007A469C /* TabBarAppearanceManagerProtocol.swift in Sources */,
 				E8B654422AD6C614007A469C /* StartupCoordinatorResult.swift in Sources */,
 				E8DD31132AB4805B006954A7 /* SystemHostingControllerInput.swift in Sources */,
+				E8B6546D2ADC18EA007A469C /* MainFlowCoordinatorResult.swift in Sources */,
 				E8B6545C2ADC067E007A469C /* AnimationTabItemInfo.swift in Sources */,
 				E801ED6B2ACEF54700414CC5 /* NavigationController+.swift in Sources */,
 				E8C42DF22ABB1B40009075FB /* Routable.swift in Sources */,
 				E8B654592ADC05EF007A469C /* RootTab.swift in Sources */,
+				E8B654692ADC18D3007A469C /* MainFlowCoordinatorOutput.swift in Sources */,
 				E8C42DB42ABAF967009075FB /* CoordinatorFactoring.swift in Sources */,
 				E8B654492AD6CBF8007A469C /* TabBarCoordinatorResult.swift in Sources */,
 				E8C42DC72ABB07FA009075FB /* WebViewOutput.swift in Sources */,
@@ -1630,6 +1653,7 @@
 				E8C42DFD2ABB238C009075FB /* PresentAnimator.swift in Sources */,
 				E8C42DBF2ABB05E2009075FB /* CommonModuleFactoring.swift in Sources */,
 				E8C42E022ABB2545009075FB /* ModalTransitionStyle.swift in Sources */,
+				E8B6546B2ADC18DF007A469C /* MainFlowCoordinatorInput.swift in Sources */,
 				E8C42E062ABB26DA009075FB /* LifeCycleListener.swift in Sources */,
 				E8C42E002ABB2512009075FB /* ModalPresentationStyle.swift in Sources */,
 				E8C42DFB2ABB21DB009075FB /* DismissAnimator.swift in Sources */,
