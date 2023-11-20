@@ -8,6 +8,10 @@
 import Foundation
 
 public protocol CoordinatorFactoring {
+    func makeApplicationCoordinator(
+        router: Routable
+    ) -> AnyCoordinator<Void>
+
     func makeStartupCoordinator(
         output: StartupCoordinatorOutput & BaseCoordinator,
         router: Routable

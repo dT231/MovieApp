@@ -8,6 +8,6 @@
 import MAUIKit
 import MAModulesInfrastructure
 
-protocol TabFactoryProtocol {
-    func makeBarItem(for tab: RootTab) -> SMTabBarItemModelProtocol
+protocol TabBarFactoryProtocol {
+    func makeBarItem(for tab: RootTab) -> MATabBarItemModelProtocol
 }

@@ -9,7 +9,7 @@ import Foundation
 
 public enum UserFlowEntryPoint: Equatable {
     /// Open tabbar, process pending deeplink
-//    case pendingDeeplink
+    case pendingDeeplink
 
     /// There is an address and possibly a selected store. Open tabbar and store selection screen
 //    case storeSelection

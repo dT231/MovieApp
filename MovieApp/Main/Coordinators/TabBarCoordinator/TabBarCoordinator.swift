@@ -14,7 +14,7 @@ final class TabBarCoordinator: BaseCoordinator {
     private weak var output: TabBarCoordinatorOutput?
     
     private let coordinatorFactory: CoordinatorFactoring
-    private let tabFactory: TabFactoryProtocol
+    private let tabFactory: TabBarFactoryProtocol
     private let tabBarManager: TabBarManagerProtocol
     
     init(
@@ -22,7 +22,7 @@ final class TabBarCoordinator: BaseCoordinator {
         parent: BaseCoordinator,
         output: TabBarCoordinatorOutput,
         coordinatorFactory: CoordinatorFactoring,
-        tabFactory: TabFactoryProtocol,
+        tabFactory: TabBarFactoryProtocol,
         tabBarManager: TabBarManagerProtocol
     ) {
         self.output = output

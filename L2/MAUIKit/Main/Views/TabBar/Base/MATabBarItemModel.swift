@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public protocol SMTabBarItemModelProtocol: AnyObject {
+public protocol MATabBarItemModelProtocol: AnyObject {
     var title: String? { get set }
 }
 
@@ -20,7 +20,7 @@ public protocol SMTabBarItemModelProtocol: AnyObject {
  conforming to ObservableObject now correctly publishes changes. (71816443)
  https://stackoverflow.com/questions/57615920/published-property-wrapper-not-working-on-subclass-of-observableobject
  */
-public class SMTabBarItemModel: SMTabBarItemModelProtocol {
+public class MATabBarItemModel: MATabBarItemModelProtocol {
     @Published public var title: String?
     @Published var isSelected: Bool = false
     @Published var badgeIsHidden: Bool = true
@@ -39,12 +39,12 @@ public class SMTabBarItemModel: SMTabBarItemModelProtocol {
     }
 }
 
-extension SMTabBarItemModel: Hashable {
+extension MATabBarItemModel: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(ObjectIdentifier(self))
     }
 
-    public static func == (lhs: SMTabBarItemModel, rhs: SMTabBarItemModel) -> Bool {
+    public static func == (lhs: MATabBarItemModel, rhs: MATabBarItemModel) -> Bool {
         return lhs.type == rhs.type
             && lhs.title == rhs.title
             && lhs.isSelected == rhs.isSelected

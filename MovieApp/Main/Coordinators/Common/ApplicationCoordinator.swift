@@ -12,19 +12,16 @@ import MADomainEntites
 final class ApplicationCoordinator: BaseCoordinator {
     private let coordinatorsFactory: CoordinatorFactoring
     private let modulesFactory: ModulesFactoring
-    private let configurationService: ConfigurationServicing
     
     private var pendingFlowEntryPoint: UserFlowEntryPoint?
     
     init(
         router: Routable,
         coordinatorsFactory: CoordinatorFactoring,
-        modulesFactory: ModulesFactoring,
-        configurationService: ConfigurationServicing
+        modulesFactory: ModulesFactoring
     ) {
         self.coordinatorsFactory = coordinatorsFactory
         self.modulesFactory = modulesFactory
-        self.configurationService = configurationService
         
         super.init(router: router, parent: nil)
     }
@@ -40,6 +37,8 @@ private extension ApplicationCoordinator {
     func processUserFlowEntryPoint(_ entryPoint: UserFlowEntryPoint) {
         switch entryPoint {
         case .interestSelection:
+            openInterestSelectionCoordinator()
+        case .pendingDeeplink:
             openTabBarCoordinator()
         }
     }
@@ -49,7 +48,7 @@ private extension ApplicationCoordinator {
 // MARK: - Coordinator
 
 extension ApplicationCoordinator: Coordinator {
-    func start(with _: AnyObject?) {
+    func start(with _: Void) {
         start()
     }
 }
@@ -65,9 +64,13 @@ private extension ApplicationCoordinator {
         coordinator.start()
     }
     
-    func openTabBarCoordinator(deeplink: TabBarCoordinator.Deeplink = .appLaunch) {
+    func openTabBarCoordinator(deeplink: TabBarCoordinator.DeepLink = .appLaunch) {
         let coordinator = coordinatorsFactory.makeTabBarCoordinator(router: router, parent: self, output: self)
         coordinator.start(with: deeplink)
+    }
+    
+    func openInterestSelectionCoordinator() {
+        //TODO: Intereset selection flow starts
     }
 }
 
@@ -89,6 +92,7 @@ extension ApplicationCoordinator: TabBarCoordinatorOutput {
     func receiveResult(_ result: TabBarCoordinatorResult) {
         switch result {
         case .restartApplication:
-            openAddressSelectionCoordinator()
+            openInterestSelectionCoordinator()
+        }
     }
 }

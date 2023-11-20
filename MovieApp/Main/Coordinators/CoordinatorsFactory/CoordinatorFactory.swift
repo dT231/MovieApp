@@ -21,7 +21,53 @@ final class CoordinatorFactory: CoordinatorFactoring {
         self.dependencyFactory = dependencyFactory
     }
     
-    func makeApplicationCoordinator() -> BaseCoordinator {
-        let applicationCoordinator = ApplicationCoo
+    func makeApplicationCoordinator(router: Routable) -> AnyCoordinator<Void> {
+        
+        let applicationCoordinator = ApplicationCoordinator(
+            router: router,
+            coordinatorsFactory: self,
+            modulesFactory: modulesFactory
+        )
+        
+        return AnyCoordinator(applicationCoordinator)
+    }
+    
+    func makeStartupCoordinator(output: BaseCoordinator & StartupCoordinatorOutput, router: Routable) -> AnyCoordinator<Void> {
+        
+        let startupCoordinator =
+        StartupCoordinator(
+            output: output,
+            router: router,
+            parent: output,
+            modulesFactory: modulesFactory,
+            coordinatorFactory: self,
+            dependancyFactory: dependencyFactory
+        )
+        
+        return AnyCoordinator(startupCoordinator)
+    }
+    
+    func makeTabBarCoordinator(
+        router: Routable,
+        parent: BaseCoordinator,
+        output: TabBarCoordinatorOutput
+    ) -> AnyCoordinator<TabBarCoordinatorDeepLink> {
+        let tabFactory = TabBarFactory()
+        
+        let tabBarCoordinator = TabBarCoordinator(
+            router: router,
+            parent: parent,
+            output: output,
+            coordinatorFactory: self,
+            tabFactory: tabFactory,
+            tabBarManager: 
+        )
+    }
+    
+    func makeMainFlowCoordinator(
+        output: MainFlowCoordinatorOutput,
+        tabBarAppearanceManager: TabBarAppearanceManagerProtocol
+    ) -> (Presentable, input: MainFlowCoordinatorInput) {
+        <#code#>
     }
 }

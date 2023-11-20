@@ -40,6 +40,9 @@ open class Application: ApplicationProtocol {
         self.window = window
         self.dependencyFactory = DependencyFactory()
         self.moduleFactory = ModulesFactory()
-        self.coordinatorFactory = CoordinatorFactory()
+        self.coordinatorFactory = CoordinatorFactory(
+            modulesFactory: moduleFactory,
+            dependencyFactory: dependencyFactory
+        )
     }
 }

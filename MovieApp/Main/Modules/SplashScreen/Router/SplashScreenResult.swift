@@ -11,5 +11,4 @@ import MADomainEntites
 public enum SplashScreenResult {
     case userFlowStart(entryPoint: UserFlowEntryPoint)
     case updateRequired
-    case emergencyWebViewRequired(url: URL)
 }

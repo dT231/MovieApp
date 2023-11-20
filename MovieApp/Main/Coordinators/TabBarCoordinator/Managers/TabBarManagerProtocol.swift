@@ -9,7 +9,7 @@ import MAModulesInfrastructure
 import MAUIKit
 
 protocol TabBarManagerProtocol: TabFrameProviderProtocol, TabBarAppearanceManagerProtocol {
-    typealias PresentableTab = (presentable: Presentable, tabItem: SMTabBarItemModelProtocol)
+    typealias PresentableTab = (presentable: Presentable, tabItem: MATabBarItemModelProtocol)
 
     /// Устанавливает массив табов и массив объектов в качестве контроллеров табов
     /// - Parameters:
