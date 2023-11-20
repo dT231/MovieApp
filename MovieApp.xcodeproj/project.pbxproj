@@ -16,6 +16,7 @@
 		E84F61372B0B964900ED6941 /* TabBarItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61362B0B964900ED6941 /* TabBarItemInfo.swift */; };
 		E84F613F2B0BA5DC00ED6941 /* UITabBarItem+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F613E2B0BA5DC00ED6941 /* UITabBarItem+.swift */; };
 		E84F61412B0BA88C00ED6941 /* TabBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61402B0BA88C00ED6941 /* TabBarManager.swift */; };
+		E84F61432B0BAA9100ED6941 /* SystemTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61422B0BAA9100ED6941 /* SystemTabBarController.swift */; };
 		E8B653F92AD55C95007A469C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653F82AD55C95007A469C /* Node.swift */; };
 		E8B653FC2AD561A8007A469C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653FB2AD561A8007A469C /* Logger.swift */; };
 		E8B653FF2AD5621A007A469C /* Macro+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653FE2AD5621A007A469C /* Macro+.swift */; };
@@ -257,6 +258,7 @@
 		E84F61362B0B964900ED6941 /* TabBarItemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemInfo.swift; sourceTree = "<group>"; };
 		E84F613E2B0BA5DC00ED6941 /* UITabBarItem+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+.swift"; sourceTree = "<group>"; };
 		E84F61402B0BA88C00ED6941 /* TabBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarManager.swift; sourceTree = "<group>"; };
+		E84F61422B0BAA9100ED6941 /* SystemTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemTabBarController.swift; sourceTree = "<group>"; };
 		E8B653F82AD55C95007A469C /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		E8B653FB2AD561A8007A469C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E8B653FE2AD5621A007A469C /* Macro+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Macro+.swift"; sourceTree = "<group>"; };
@@ -631,6 +633,7 @@
 				E8B654582ADC05EF007A469C /* RootTab.swift */,
 				E8B6545B2ADC067E007A469C /* AnimationTabItemInfo.swift */,
 				E84F61362B0B964900ED6941 /* TabBarItemInfo.swift */,
+				E84F61422B0BAA9100ED6941 /* SystemTabBarController.swift */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -1657,6 +1660,7 @@
 				E8DD310D2AB47CBC006954A7 /* SystemHostingController.swift in Sources */,
 				E84F61372B0B964900ED6941 /* TabBarItemInfo.swift in Sources */,
 				E8B654662ADC0A2C007A469C /* TabBarAppearanceManagerProtocol.swift in Sources */,
+				E84F61432B0BAA9100ED6941 /* SystemTabBarController.swift in Sources */,
 				E8B654422AD6C614007A469C /* StartupCoordinatorResult.swift in Sources */,
 				E8DD31132AB4805B006954A7 /* SystemHostingControllerInput.swift in Sources */,
 				E8B6546D2ADC18EA007A469C /* MainFlowCoordinatorResult.swift in Sources */,
