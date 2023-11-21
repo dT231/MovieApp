@@ -60,7 +60,7 @@ final class CoordinatorFactory: CoordinatorFactoring {
             output: output,
             coordinatorFactory: self,
             tabFactory: tabFactory,
-            tabBarManager: 
+            tabBarManager:
         )
     }
     

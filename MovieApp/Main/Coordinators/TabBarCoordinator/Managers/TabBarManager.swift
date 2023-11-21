@@ -52,28 +52,51 @@ extension TabBarManager: TabBarManagerProtocol {
         tabBarController.selectedIndex = selectedIndex
     }
     
-    var selectedTab: MAModulesInfrastructure.RootTab {
-        <#code#>
-    }
-    
-    var tabBarPresentable: MAModulesInfrastructure.Presentable {
-        <#code#>
-    }
-    
     func getTabFrame(for tab: MAModulesInfrastructure.RootTab) -> CGRect? {
-        <#code#>
+        guard let tabIndex = getTabIndex(by: tab) else {
+            return nil
+        }
+        
+        let frames: [CGRect] = tabBarController.tabBar.subviews
+            .compactMap { $0.frame }
+            .sorted { $0.origin.x < $1.origin.x }
+        
+        guard var tabFrame = frames[safe: tabIndex] else {
+            return nil
+        }
+        
+        tabFrame = tabFrame.insetBy(dx: 0, dy: -4)
+        
+        let globalOriginY = tabBarController.tabBar.frame.minY
+        var outFrame = tabFrame
+        outFrame.origin.y = globalOriginY
+        
+        return outFrame
     }
     
     func showTabBar(animated: Bool) {
-        <#code#>
+        setTabBarHidden(false, animated: animated)
     }
     
     func hideTabBar(animated: Bool) {
-        <#code#>
+        setTabBarHidden(true, animated: animated)
     }
     
     func setTabBarHidden(_ hidden: Bool, animated: Bool) {
-        <#code#>
+        tabBarController.setTabBarHidden(hidden, animated: animated)
+    }
+    
+    var selectedTab: MAModulesInfrastructure.RootTab {
+        guard let maxIndex = RootTab.allCases.map({ $0.rawValue }).max(), tabBarController.selectedIndex <= maxIndex else {
+            assertionFailure("Ошибка получения выбранного индекса в таббаре(")
+            return .main
+        }
+        
+        return RootTab(rawValue: tabBarController.selectedIndex) ?? .main
+    }
+    
+    var tabBarPresentable: MAModulesInfrastructure.Presentable {
+        tabBarController
     }
 }
 

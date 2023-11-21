@@ -17,6 +17,7 @@
 		E84F613F2B0BA5DC00ED6941 /* UITabBarItem+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F613E2B0BA5DC00ED6941 /* UITabBarItem+.swift */; };
 		E84F61412B0BA88C00ED6941 /* TabBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61402B0BA88C00ED6941 /* TabBarManager.swift */; };
 		E84F61432B0BAA9100ED6941 /* SystemTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61422B0BAA9100ED6941 /* SystemTabBarController.swift */; };
+		E84F61452B0CDC5A00ED6941 /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61442B0CDC5A00ED6941 /* Collection+.swift */; };
 		E8B653F92AD55C95007A469C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653F82AD55C95007A469C /* Node.swift */; };
 		E8B653FC2AD561A8007A469C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653FB2AD561A8007A469C /* Logger.swift */; };
 		E8B653FF2AD5621A007A469C /* Macro+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653FE2AD5621A007A469C /* Macro+.swift */; };
@@ -259,6 +260,7 @@
 		E84F613E2B0BA5DC00ED6941 /* UITabBarItem+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+.swift"; sourceTree = "<group>"; };
 		E84F61402B0BA88C00ED6941 /* TabBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarManager.swift; sourceTree = "<group>"; };
 		E84F61422B0BAA9100ED6941 /* SystemTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemTabBarController.swift; sourceTree = "<group>"; };
+		E84F61442B0CDC5A00ED6941 /* Collection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
 		E8B653F82AD55C95007A469C /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		E8B653FB2AD561A8007A469C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E8B653FE2AD5621A007A469C /* Macro+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Macro+.swift"; sourceTree = "<group>"; };
@@ -480,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				E8B653FE2AD5621A007A469C /* Macro+.swift */,
+				E84F61442B0CDC5A00ED6941 /* Collection+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1592,6 +1595,7 @@
 				E8C42E202ABC4DF3009075FB /* MAFoundation.docc in Sources */,
 				E801ED632ACEF0BD00414CC5 /* WeakReference.swift in Sources */,
 				E8B653FC2AD561A8007A469C /* Logger.swift in Sources */,
+				E84F61452B0CDC5A00ED6941 /* Collection+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
