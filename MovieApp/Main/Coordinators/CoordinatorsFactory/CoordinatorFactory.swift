@@ -10,6 +10,8 @@ import MAModulesInfrastructure
 import MADependencies
 
 final class CoordinatorFactory: CoordinatorFactoring {
+  
+    
     private var modulesFactory: ModulesFactoring
     private var dependencyFactory: DependencyFactoryProtocol
     
@@ -53,6 +55,8 @@ final class CoordinatorFactory: CoordinatorFactoring {
         output: TabBarCoordinatorOutput
     ) -> AnyCoordinator<TabBarCoordinatorDeepLink> {
         let tabFactory = TabBarFactory()
+        let tabBarController = SystemTabBarController()
+        let tabBarManager = TabBarManager(tabBarController: tabBarController)
         
         let tabBarCoordinator = TabBarCoordinator(
             router: router,
@@ -60,14 +64,16 @@ final class CoordinatorFactory: CoordinatorFactoring {
             output: output,
             coordinatorFactory: self,
             tabFactory: tabFactory,
-            tabBarManager:
+            tabBarManager: tabBarManager
         )
     }
     
     func makeMainFlowCoordinator(
         output: MainFlowCoordinatorOutput,
         tabBarAppearanceManager: TabBarAppearanceManagerProtocol
-    ) -> (Presentable, input: MainFlowCoordinatorInput) {
-        <#code#>
+    ) -> (view: Presentable, input: MainFlowCoordinatorInput) {
+        let navigationController = SystemNavigationController()
+        
+        let coordinator =
     }
 }

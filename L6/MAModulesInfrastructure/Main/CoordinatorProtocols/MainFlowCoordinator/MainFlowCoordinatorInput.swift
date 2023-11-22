@@ -6,5 +6,5 @@
 //
 
 public protocol MainFlowCoordinatorInput: AnyObject {
-    func open()
+    func open(deepLink: MainFlowCoordinatorDeepLink)
 }
