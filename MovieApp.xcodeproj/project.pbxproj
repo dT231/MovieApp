@@ -25,6 +25,18 @@
 		E84F61632B0E2BDE00ED6941 /* MAMainScenes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84F614E2B0E2BDD00ED6941 /* MAMainScenes.framework */; };
 		E84F61642B0E2BDE00ED6941 /* MAMainScenes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E84F614E2B0E2BDD00ED6941 /* MAMainScenes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E84F616E2B0E2CD400ED6941 /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F616D2B0E2CD400ED6941 /* MainFlowCoordinator.swift */; };
+		E84F61712B0F65FF00ED6941 /* ModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61702B0F65FF00ED6941 /* ModulesFactory.swift */; };
+		E84F61732B0F67D800ED6941 /* SplashScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61722B0F67D800ED6941 /* SplashScreenConfigurator.swift */; };
+		E84F61752B0F687300ED6941 /* SplashScreenViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61742B0F687300ED6941 /* SplashScreenViewState.swift */; };
+		E84F61772B0F69BA00ED6941 /* SplashScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61762B0F69BA00ED6941 /* SplashScreenInteractor.swift */; };
+		E84F61792B0F6A2100ED6941 /* SplashScreenInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61782B0F6A2100ED6941 /* SplashScreenInteracting.swift */; };
+		E84F617C2B0F6EF200ED6941 /* UserInfoServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F617B2B0F6EF200ED6941 /* UserInfoServicing.swift */; };
+		E84F617F2B0F79C500ED6941 /* MoviesServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F617E2B0F79C500ED6941 /* MoviesServicing.swift */; };
+		E84F61802B0F855C00ED6941 /* ConfigurationServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654322AD6B618007A469C /* ConfigurationServicing.swift */; };
+		E84F61822B0F89DD00ED6941 /* DependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61812B0F89DD00ED6941 /* DependencyFactory.swift */; };
+		E84F61842B0F8A6500ED6941 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61832B0F8A6500ED6941 /* MovieService.swift */; };
+		E84F61862B0F8B2500ED6941 /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61852B0F8B2500ED6941 /* UserInfoService.swift */; };
+		E84F61882B0F8B9600ED6941 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F61872B0F8B9600ED6941 /* ConfigurationService.swift */; };
 		E8B653F92AD55C95007A469C /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653F82AD55C95007A469C /* Node.swift */; };
 		E8B653FC2AD561A8007A469C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653FB2AD561A8007A469C /* Logger.swift */; };
 		E8B653FF2AD5621A007A469C /* Macro+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B653FE2AD5621A007A469C /* Macro+.swift */; };
@@ -38,7 +50,6 @@
 		E8B654252AD6B44F007A469C /* MAServices.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B654152AD6B44F007A469C /* MAServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B654282AD6B450007A469C /* MAServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B654132AD6B44F007A469C /* MAServices.framework */; };
 		E8B654292AD6B450007A469C /* MAServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8B654132AD6B44F007A469C /* MAServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E8B654332AD6B618007A469C /* ConfigurationServicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654322AD6B618007A469C /* ConfigurationServicing.swift */; };
 		E8B654372AD6B9E6007A469C /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654352AD6B726007A469C /* AppConfig.swift */; };
 		E8B654392AD6B9F3007A469C /* AppConfigAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B654382AD6B9F3007A469C /* AppConfigAuthentication.swift */; };
 		E8B6543B2AD6BA85007A469C /* AppConfigContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6543A2AD6BA85007A469C /* AppConfigContacts.swift */; };
@@ -296,6 +307,17 @@
 		E84F61572B0E2BDE00ED6941 /* MAMainScenesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAMainScenesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84F615E2B0E2BDE00ED6941 /* MAMainScenesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAMainScenesTests.swift; sourceTree = "<group>"; };
 		E84F616D2B0E2CD400ED6941 /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
+		E84F61702B0F65FF00ED6941 /* ModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactory.swift; sourceTree = "<group>"; };
+		E84F61722B0F67D800ED6941 /* SplashScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenConfigurator.swift; sourceTree = "<group>"; };
+		E84F61742B0F687300ED6941 /* SplashScreenViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewState.swift; sourceTree = "<group>"; };
+		E84F61762B0F69BA00ED6941 /* SplashScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenInteractor.swift; sourceTree = "<group>"; };
+		E84F61782B0F6A2100ED6941 /* SplashScreenInteracting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenInteracting.swift; sourceTree = "<group>"; };
+		E84F617B2B0F6EF200ED6941 /* UserInfoServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoServicing.swift; sourceTree = "<group>"; };
+		E84F617E2B0F79C500ED6941 /* MoviesServicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesServicing.swift; sourceTree = "<group>"; };
+		E84F61812B0F89DD00ED6941 /* DependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyFactory.swift; sourceTree = "<group>"; };
+		E84F61832B0F8A6500ED6941 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		E84F61852B0F8B2500ED6941 /* UserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
+		E84F61872B0F8B9600ED6941 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
 		E8B653F82AD55C95007A469C /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		E8B653FB2AD561A8007A469C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E8B653FE2AD5621A007A469C /* Macro+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Macro+.swift"; sourceTree = "<group>"; };
@@ -565,6 +587,24 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		E84F617A2B0F6ECE00ED6941 /* UserInfoService */ = {
+			isa = PBXGroup;
+			children = (
+				E84F617B2B0F6EF200ED6941 /* UserInfoServicing.swift */,
+				E84F61852B0F8B2500ED6941 /* UserInfoService.swift */,
+			);
+			path = UserInfoService;
+			sourceTree = "<group>";
+		};
+		E84F617D2B0F79A400ED6941 /* MoviesService */ = {
+			isa = PBXGroup;
+			children = (
+				E84F617E2B0F79C500ED6941 /* MoviesServicing.swift */,
+				E84F61832B0F8A6500ED6941 /* MovieService.swift */,
+			);
+			path = MoviesService;
+			sourceTree = "<group>";
+		};
 		E8B653F72AD55C78007A469C /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,6 +675,8 @@
 		E8B654302AD6B472007A469C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E84F617D2B0F79A400ED6941 /* MoviesService */,
+				E84F617A2B0F6ECE00ED6941 /* UserInfoService */,
 				E8B654312AD6B5CD007A469C /* ConfiguratuonService */,
 			);
 			path = Main;
@@ -644,6 +686,7 @@
 			isa = PBXGroup;
 			children = (
 				E8B654322AD6B618007A469C /* ConfigurationServicing.swift */,
+				E84F61872B0F8B9600ED6941 /* ConfigurationService.swift */,
 			);
 			path = ConfiguratuonService;
 			sourceTree = "<group>";
@@ -818,6 +861,7 @@
 			isa = PBXGroup;
 			children = (
 				E8C42DBB2ABAFF55009075FB /* ModulesFactoring.swift */,
+				E84F61702B0F65FF00ED6941 /* ModulesFactory.swift */,
 			);
 			path = ModulesFactrory;
 			sourceTree = "<group>";
@@ -895,6 +939,7 @@
 		E8C42DCC2ABB0AB0009075FB /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
+				E84F61722B0F67D800ED6941 /* SplashScreenConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -902,6 +947,8 @@
 		E8C42DCD2ABB0AC0009075FB /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				E84F61762B0F69BA00ED6941 /* SplashScreenInteractor.swift */,
+				E84F61782B0F6A2100ED6941 /* SplashScreenInteracting.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -926,6 +973,7 @@
 		E8C42DD02ABB0AD9009075FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E84F61742B0F687300ED6941 /* SplashScreenViewState.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1236,6 +1284,7 @@
 			isa = PBXGroup;
 			children = (
 				E8DD31502AB490F0006954A7 /* DependencyFactoryProtocol.swift */,
+				E84F61812B0F89DD00ED6941 /* DependencyFactory.swift */,
 			);
 			path = Assemblies;
 			sourceTree = "<group>";
@@ -1753,7 +1802,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84F61862B0F8B2500ED6941 /* UserInfoService.swift in Sources */,
 				E8B654172AD6B44F007A469C /* MAServices.docc in Sources */,
+				E84F61802B0F855C00ED6941 /* ConfigurationServicing.swift in Sources */,
+				E84F617C2B0F6EF200ED6941 /* UserInfoServicing.swift in Sources */,
+				E84F61882B0F8B9600ED6941 /* ConfigurationService.swift in Sources */,
+				E84F617F2B0F79C500ED6941 /* MoviesServicing.swift in Sources */,
+				E84F61842B0F8A6500ED6941 /* MovieService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1797,6 +1852,7 @@
 				E84F61332B0B855100ED6941 /* StartupCoordinator.swift in Sources */,
 				E8C42DBC2ABAFF55009075FB /* ModulesFactoring.swift in Sources */,
 				E84F61352B0B953B00ED6941 /* TabFactory.swift in Sources */,
+				E84F61792B0F6A2100ED6941 /* SplashScreenInteracting.swift in Sources */,
 				E8B654062AD5D163007A469C /* ApplicationWindow.swift in Sources */,
 				E8DD313B2AB48FC4006954A7 /* ApplicationDecorator.swift in Sources */,
 				E8C42DD42ABB0B54009075FB /* SplashScreenResult.swift in Sources */,
@@ -1806,13 +1862,16 @@
 				E8C42DED2ABB142C009075FB /* SplashScreenInput.swift in Sources */,
 				E8B654602ADC080E007A469C /* TabBarManagerDelegate.swift in Sources */,
 				E8B6545E2ADC07CC007A469C /* TabBarManagerProtocol.swift in Sources */,
+				E84F61712B0F65FF00ED6941 /* ModulesFactory.swift in Sources */,
 				E8B654502ADC0447007A469C /* TabBarFactoryProtocol.swift in Sources */,
+				E84F61732B0F67D800ED6941 /* SplashScreenConfigurator.swift in Sources */,
+				E84F61752B0F687300ED6941 /* SplashScreenViewState.swift in Sources */,
 				E8C42DB82ABAFAC5009075FB /* main.swift in Sources */,
 				E84F61412B0BA88C00ED6941 /* TabBarManager.swift in Sources */,
 				E8DD30DF2AB475A8006954A7 /* AppDelegate.swift in Sources */,
 				E8B654092AD6AED9007A469C /* CoordinatorFactory.swift in Sources */,
-				E8B654332AD6B618007A469C /* ConfigurationServicing.swift in Sources */,
 				E8B6540C2AD6B022007A469C /* ApplicationCoordinator.swift in Sources */,
+				E84F61772B0F69BA00ED6941 /* SplashScreenInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1906,6 +1965,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8DD31462AB49077006954A7 /* Dependencies.docc in Sources */,
+				E84F61822B0F89DD00ED6941 /* DependencyFactory.swift in Sources */,
 				E8DD31512AB490F0006954A7 /* DependencyFactoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2017,7 +2077,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2056,7 +2116,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2143,7 +2203,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2182,7 +2242,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2208,6 +2268,7 @@
 		E8B6542E2AD6B450007A469C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2231,6 +2292,7 @@
 		E8B6542F2AD6B450007A469C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

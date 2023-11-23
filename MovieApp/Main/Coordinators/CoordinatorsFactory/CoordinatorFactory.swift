@@ -8,6 +8,7 @@
 import Foundation
 import MAModulesInfrastructure
 import MADependencies
+import MAMainScenes
 
 final class CoordinatorFactory: CoordinatorFactoring {
   
@@ -66,6 +67,8 @@ final class CoordinatorFactory: CoordinatorFactoring {
             tabFactory: tabFactory,
             tabBarManager: tabBarManager
         )
+        
+        return AnyCoordinator(tabBarCoordinator)
     }
     
     func makeMainFlowCoordinator(
@@ -73,7 +76,15 @@ final class CoordinatorFactory: CoordinatorFactoring {
         tabBarAppearanceManager: TabBarAppearanceManagerProtocol
     ) -> (view: Presentable, input: MainFlowCoordinatorInput) {
         let navigationController = SystemNavigationController()
+        let router = ApplicationRouter(rootController: navigationController)
         
-        let coordinator =
+        let coordinator = MainFlowCoordinator(
+            output: output,
+            router: router,
+            coordinatorsFactory: self,
+            tabBarAppearanceManager: tabBarAppearanceManager
+        )
+        
+        return (navigationController, coordinator)
     }
 }

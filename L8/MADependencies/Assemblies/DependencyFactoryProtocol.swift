@@ -6,9 +6,16 @@
 //
 
 import Foundation
+import MAServices
 
-public typealias DependencyFactoryProtocol = NetworkFactoryProtocol
+public typealias DependencyFactoryProtocol = NetworkFactoryProtocol & ServiceFactoryProtocol
 
 public protocol NetworkFactoryProtocol {
     var stub: String { get }
+}
+
+public protocol ServiceFactoryProtocol {
+    var userInfoServiceProtocol: UserInfoServicing { get }
+    var configurationService: ConfigurationServicing { get }
+    var MoviesService: MoviesServicing { get }
 }

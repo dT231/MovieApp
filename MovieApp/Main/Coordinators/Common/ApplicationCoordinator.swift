@@ -83,7 +83,6 @@ extension ApplicationCoordinator: StartupCoordinatorOutput {
             processUserFlowEntryPoint(entryPoint)
         }
     }
-    
 }
  
 // MARK: - TabBarCoordinatorOutput

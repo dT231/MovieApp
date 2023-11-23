@@ -36,6 +36,7 @@ final class TabBarCoordinator: BaseCoordinator {
 extension TabBarCoordinator: Coordinator {
     func start(with option: DeepLink) {
         tabBarManager.delegate = self
+        prepareTabs(deepLink: option)
     }
 }
 
@@ -62,9 +63,9 @@ private extension TabBarCoordinator {
         
         switch deepLink {
         case .appLaunch:
-            
+            unit.input.open(deepLink: .interestsSelection)
         case .afterInterestSelection:
-            
+            unit.input.open(deepLink: .main)
         }
     }
     func makeCatalogTab() -> TabBarManagerProtocol.PresentableTab {

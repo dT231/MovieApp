@@ -37,9 +37,9 @@ extension MainFlowCoordinator: MainFlowCoordinatorInput {
     public func open(deepLink: MainFlowCoordinatorDeepLink) {
         switch deepLink {
         case .interestsSelection:
-            <#code#>
-        case .storeInterestsSelection:
-            <#code#>
+            openInterestSelection()
+        case .main:
+            openMainScreen(animated: true)
         }
     }
 }

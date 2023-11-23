@@ -9,5 +9,5 @@ public enum MainFlowCoordinatorDeepLink {
     /// start on store selection module
     case interestsSelection
     /// Put Interests selection into navigation stack
-    case storeInterestsSelection
+    case main
 }

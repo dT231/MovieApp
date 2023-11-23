@@ -39,7 +39,7 @@ open class Application: ApplicationProtocol {
         window = ApplicationWindow(frame: UIScreen.main.bounds)
         self.window = window
         self.dependencyFactory = DependencyFactory()
-        self.moduleFactory = ModulesFactory()
+        self.moduleFactory = ModulesFactory(dependancyFactory: )
         self.coordinatorFactory = CoordinatorFactory(
             modulesFactory: moduleFactory,
             dependencyFactory: dependencyFactory
