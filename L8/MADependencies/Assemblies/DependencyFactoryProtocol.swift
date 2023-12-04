@@ -15,7 +15,7 @@ public protocol NetworkFactoryProtocol {
 }
 
 public protocol ServiceFactoryProtocol {
-    var userInfoServiceProtocol: UserInfoServicing { get }
+    var userInfoService: UserInfoServicing { get }
     var configurationService: ConfigurationServicing { get }
-    var MoviesService: MoviesServicing { get }
+    var moviesService: MoviesServicing { get }
 }

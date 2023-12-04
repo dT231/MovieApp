@@ -10,5 +10,5 @@ import MADomainEntites
 
 public protocol ConfigurationServicing {
     func loadConfiguration() -> AnyPublisher<Void, Error>
-    func sharedConfig() -> AppConfig
+    func sharedConfig() -> AppConfig?
 }

@@ -12,7 +12,8 @@ final public class UserInfoService {
 }
 
 extension UserInfoService: UserInfoServicing {
-    func loadUserInfo() -> AnyPublisher<String, Error> {
-        Just("").setFailureType(to: Error.self).eraseToAnyPublisher()
+    public func loadUserInfo() -> AnyPublisher<Void, Error> {
+//        Just("").setFailureType(to: Error.self).eraseToAnyPublisher()
+        Just(()).setFailureType(to: Error.self).eraseToAnyPublisher()
     }
 }

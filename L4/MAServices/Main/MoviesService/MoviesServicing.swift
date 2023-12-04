@@ -8,5 +8,5 @@
 import Combine
 
 public protocol MoviesServicing {
-    func loadGenres() -> AnyPublisher<[String], Error>
+    func loadGenres() -> AnyPublisher<Void, Error>
 }

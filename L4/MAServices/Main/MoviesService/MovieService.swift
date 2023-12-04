@@ -12,7 +12,8 @@ final public class MovieService {
 }
 
 extension MovieService: MoviesServicing {
-    public func loadGenres() -> AnyPublisher<[String], Error> {
-        Result.Publisher(["GenreStub1", "GenreStub2"]).eraseToAnyPublisher()
+    public func loadGenres() -> AnyPublisher<Void, Error> {
+//        Result.Publisher(["GenreStub1", "GenreStub2"]).eraseToAnyPublisher()
+        Result.Publisher(()).eraseToAnyPublisher()
     }
 }

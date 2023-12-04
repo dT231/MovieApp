@@ -19,9 +19,10 @@ final class SplashScreenConfigurator {
     func configure() -> ConcreteModule<SplashScreenInput> {
         let viewState = SplashScreenViewState()
         let interactor = SplashScreenInteractor(
-            userInfoService: dependancyFactory, 
-            configService: ConfigurationServicing,
-            moviesService: MoviesServicing
+            userInfoService: dependancyFactory.userInfoService,
+            configService: dependancyFactory.configurationService,
+            moviesService: dependancyFactory.moviesService
         )
+        let presenter = 
     }
 }

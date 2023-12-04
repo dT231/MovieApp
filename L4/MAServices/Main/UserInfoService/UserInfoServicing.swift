@@ -8,5 +8,5 @@
 import Combine
 
 public protocol UserInfoServicing {
-    func loadUserInfo() -> AnyPublisher<String, Error>
+    func loadUserInfo() -> AnyPublisher<Void, Error>
 }

@@ -108,6 +108,8 @@
 		E8C42E212ABC4DF3009075FB /* MAFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C42E1E2ABC4DF3009075FB /* MAFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8C42E242ABC4DF3009075FB /* MAFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C42E1C2ABC4DF3009075FB /* MAFoundation.framework */; };
 		E8C42E252ABC4DF3009075FB /* MAFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8C42E1C2ABC4DF3009075FB /* MAFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8CBA7952B1DF2D300ABCA79 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7942B1DF2D300ABCA79 /* SplashScreenView.swift */; };
+		E8CBA7972B1DF45700ABCA79 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7962B1DF45700ABCA79 /* SplashScreenPresenter.swift */; };
 		E8DD30B92AB46C5B006954A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DD30B82AB46C5B006954A7 /* Assets.xcassets */; };
 		E8DD30BD2AB46C5B006954A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DD30BC2AB46C5B006954A7 /* Preview Assets.xcassets */; };
 		E8DD30C72AB46C5B006954A7 /* MovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DD30C62AB46C5B006954A7 /* MovieAppTests.swift */; };
@@ -385,6 +387,8 @@
 		E8C42E1C2ABC4DF3009075FB /* MAFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C42E1E2ABC4DF3009075FB /* MAFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAFoundation.h; sourceTree = "<group>"; };
 		E8C42E1F2ABC4DF3009075FB /* MAFoundation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MAFoundation.docc; sourceTree = "<group>"; };
+		E8CBA7942B1DF2D300ABCA79 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		E8CBA7962B1DF45700ABCA79 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
 		E8DD30B12AB46C5A006954A7 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DD30B42AB46C5A006954A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8DD30B82AB46C5B006954A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -956,6 +960,7 @@
 		E8C42DCE2ABB0ACA009075FB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				E8CBA7962B1DF45700ABCA79 /* SplashScreenPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -974,6 +979,7 @@
 			isa = PBXGroup;
 			children = (
 				E84F61742B0F687300ED6941 /* SplashScreenViewState.swift */,
+				E8CBA7942B1DF2D300ABCA79 /* SplashScreenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1859,6 +1865,7 @@
 				E8DD31392AB48F07006954A7 /* Application.swift in Sources */,
 				E8C42DD22ABB0AF8009075FB /* SplashScreenOutput.swift in Sources */,
 				E8B6544D2ADC034D007A469C /* TabBarCoordinator.swift in Sources */,
+				E8CBA7972B1DF45700ABCA79 /* SplashScreenPresenter.swift in Sources */,
 				E8C42DED2ABB142C009075FB /* SplashScreenInput.swift in Sources */,
 				E8B654602ADC080E007A469C /* TabBarManagerDelegate.swift in Sources */,
 				E8B6545E2ADC07CC007A469C /* TabBarManagerProtocol.swift in Sources */,
@@ -1872,6 +1879,7 @@
 				E8B654092AD6AED9007A469C /* CoordinatorFactory.swift in Sources */,
 				E8B6540C2AD6B022007A469C /* ApplicationCoordinator.swift in Sources */,
 				E84F61772B0F69BA00ED6941 /* SplashScreenInteractor.swift in Sources */,
+				E8CBA7952B1DF2D300ABCA79 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol SplashScreenInteracting {
-    func loadUserProfile() -> AnyPublisher<String, Error>
+    func loadUserProfile() -> AnyPublisher<Void, Error>
     func loadAppConfiguration() -> AnyPublisher<Void, Error>
-    func loadMovieGenre() -> AnyPublisher<[String], Error>
+    func loadMovieGenre() -> AnyPublisher<Void, Error>
 }

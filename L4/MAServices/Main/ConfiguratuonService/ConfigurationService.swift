@@ -9,7 +9,7 @@ import Combine
 import MADomainEntites
 
 final public class ConfigurationService {
-    
+    private var config: AppConfig?
 }
 
 extension ConfigurationService: ConfigurationServicing {
@@ -17,7 +17,7 @@ extension ConfigurationService: ConfigurationServicing {
         Result.Publisher(()).eraseToAnyPublisher()
     }
     
-    public func sharedConfig() -> AppConfig {
-        
+    public func sharedConfig() -> AppConfig? {
+        config
     }
 }

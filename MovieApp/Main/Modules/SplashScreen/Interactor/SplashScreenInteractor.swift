@@ -25,7 +25,7 @@ final class SplashScreenInteractor {
 }
 
 extension SplashScreenInteractor: SplashScreenInteracting {
-    func loadUserProfile() -> AnyPublisher<String, Error> {
+    func loadUserProfile() -> AnyPublisher<Void, Error> {
         userInfoService.loadUserInfo()
     }
     
@@ -33,7 +33,7 @@ extension SplashScreenInteractor: SplashScreenInteracting {
         configService.loadConfiguration()
     }
     
-    func loadMovieGenre() -> AnyPublisher<[String], Error> {
+    func loadMovieGenre() -> AnyPublisher<Void, Error> {
         moviesService.loadGenres()
     }
 }
