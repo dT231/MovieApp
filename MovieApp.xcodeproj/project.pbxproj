@@ -110,6 +110,16 @@
 		E8C42E252ABC4DF3009075FB /* MAFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8C42E1C2ABC4DF3009075FB /* MAFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E8CBA7952B1DF2D300ABCA79 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7942B1DF2D300ABCA79 /* SplashScreenView.swift */; };
 		E8CBA7972B1DF45700ABCA79 /* SplashScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7962B1DF45700ABCA79 /* SplashScreenPresenter.swift */; };
+		E8CBA7A82B1F56E700ABCA79 /* MAAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7A72B1F56E700ABCA79 /* MAAPI.docc */; };
+		E8CBA7AE2B1F56E800ABCA79 /* MAAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CBA7A42B1F56E700ABCA79 /* MAAPI.framework */; };
+		E8CBA7B52B1F56E800ABCA79 /* MAAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7B42B1F56E800ABCA79 /* MAAPITests.swift */; };
+		E8CBA7B62B1F56E800ABCA79 /* MAAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CBA7A62B1F56E700ABCA79 /* MAAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8CBA7B92B1F56E800ABCA79 /* MAAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CBA7A42B1F56E700ABCA79 /* MAAPI.framework */; };
+		E8CBA7BA2B1F56E800ABCA79 /* MAAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8CBA7A42B1F56E700ABCA79 /* MAAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8CBA7C32B1F57BC00ABCA79 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7C22B1F57BC00ABCA79 /* File.swift */; };
+		E8CBA7C42B1F57C600ABCA79 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA79A2B1F533100ABCA79 /* ResponseError.swift */; };
+		E8CBA7C52B1F57CA00ABCA79 /* BaseApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA79C2B1F554400ABCA79 /* BaseApiError.swift */; };
+		E8CBA7C72B1F5D6400ABCA79 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7C62B1F5D6400ABCA79 /* HTTPStatusCode.swift */; };
 		E8DD30B92AB46C5B006954A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DD30B82AB46C5B006954A7 /* Assets.xcassets */; };
 		E8DD30BD2AB46C5B006954A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DD30BC2AB46C5B006954A7 /* Preview Assets.xcassets */; };
 		E8DD30C72AB46C5B006954A7 /* MovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DD30C62AB46C5B006954A7 /* MovieAppTests.swift */; };
@@ -204,6 +214,27 @@
 			remoteGlobalIDString = E8C42E1B2ABC4DF3009075FB;
 			remoteInfo = MAFoundation;
 		};
+		E8CBA7AF2B1F56E800ABCA79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8DD30A92AB46C5A006954A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8CBA7A32B1F56E700ABCA79;
+			remoteInfo = MAAPI;
+		};
+		E8CBA7B12B1F56E800ABCA79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8DD30A92AB46C5A006954A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8DD30B02AB46C5A006954A7;
+			remoteInfo = MovieApp;
+		};
+		E8CBA7B72B1F56E800ABCA79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8DD30A92AB46C5A006954A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8CBA7A32B1F56E700ABCA79;
+			remoteInfo = MAAPI;
+		};
 		E8DD30C32AB46C5B006954A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E8DD30A92AB46C5A006954A7 /* Project object */;
@@ -283,6 +314,7 @@
 				E8DD31032AB47C2A006954A7 /* MAModulesInfrastructure.framework in Embed Frameworks */,
 				E84F61642B0E2BDE00ED6941 /* MAMainScenes.framework in Embed Frameworks */,
 				E8DD31232AB482C5006954A7 /* MAUIKit.framework in Embed Frameworks */,
+				E8CBA7BA2B1F56E800ABCA79 /* MAAPI.framework in Embed Frameworks */,
 				E8B654292AD6B450007A469C /* MAServices.framework in Embed Frameworks */,
 				E8DD314B2AB49077006954A7 /* MADependencies.framework in Embed Frameworks */,
 				E8C42E252ABC4DF3009075FB /* MAFoundation.framework in Embed Frameworks */,
@@ -389,6 +421,15 @@
 		E8C42E1F2ABC4DF3009075FB /* MAFoundation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MAFoundation.docc; sourceTree = "<group>"; };
 		E8CBA7942B1DF2D300ABCA79 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		E8CBA7962B1DF45700ABCA79 /* SplashScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenPresenter.swift; sourceTree = "<group>"; };
+		E8CBA79A2B1F533100ABCA79 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		E8CBA79C2B1F554400ABCA79 /* BaseApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiError.swift; sourceTree = "<group>"; };
+		E8CBA7A42B1F56E700ABCA79 /* MAAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CBA7A62B1F56E700ABCA79 /* MAAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAAPI.h; sourceTree = "<group>"; };
+		E8CBA7A72B1F56E700ABCA79 /* MAAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MAAPI.docc; sourceTree = "<group>"; };
+		E8CBA7AD2B1F56E700ABCA79 /* MAAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CBA7B42B1F56E800ABCA79 /* MAAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAAPITests.swift; sourceTree = "<group>"; };
+		E8CBA7C22B1F57BC00ABCA79 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		E8CBA7C62B1F5D6400ABCA79 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		E8DD30B12AB46C5A006954A7 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DD30B42AB46C5A006954A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8DD30B82AB46C5B006954A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -467,6 +508,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8CBA7A12B1F56E700ABCA79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CBA7AA2B1F56E700ABCA79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CBA7AE2B1F56E800ABCA79 /* MAAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8DD30AE2AB46C5A006954A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,6 +530,7 @@
 				E8DD31022AB47C2A006954A7 /* MAModulesInfrastructure.framework in Frameworks */,
 				E84F61632B0E2BDE00ED6941 /* MAMainScenes.framework in Frameworks */,
 				E8DD31222AB482C5006954A7 /* MAUIKit.framework in Frameworks */,
+				E8CBA7B92B1F56E800ABCA79 /* MAAPI.framework in Frameworks */,
 				E8B654282AD6B450007A469C /* MAServices.framework in Frameworks */,
 				E8DD314A2AB49077006954A7 /* MADependencies.framework in Frameworks */,
 				E8C42E242ABC4DF3009075FB /* MAFoundation.framework in Frameworks */,
@@ -987,6 +1044,7 @@
 		E8C42DD52ABB0BB5009075FB /* L1 */ = {
 			isa = PBXGroup;
 			children = (
+				E8CBA7A52B1F56E700ABCA79 /* MAAPI */,
 				E8C42DDD2ABB0CCE009075FB /* MADomainEntites */,
 			);
 			path = L1;
@@ -1098,6 +1156,59 @@
 			path = Types;
 			sourceTree = "<group>";
 		};
+		E8CBA7982B1F530B00ABCA79 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBA7C62B1F5D6400ABCA79 /* HTTPStatusCode.swift */,
+				E8CBA79E2B1F55B100ABCA79 /* Responses */,
+				E8CBA7992B1F531400ABCA79 /* Errors */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E8CBA7992B1F531400ABCA79 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBA79A2B1F533100ABCA79 /* ResponseError.swift */,
+				E8CBA79C2B1F554400ABCA79 /* BaseApiError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		E8CBA79E2B1F55B100ABCA79 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBA7C22B1F57BC00ABCA79 /* File.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		E8CBA7A52B1F56E700ABCA79 /* MAAPI */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBA7C12B1F572100ABCA79 /* Main */,
+				E8CBA7A62B1F56E700ABCA79 /* MAAPI.h */,
+				E8CBA7A72B1F56E700ABCA79 /* MAAPI.docc */,
+			);
+			path = MAAPI;
+			sourceTree = "<group>";
+		};
+		E8CBA7B32B1F56E800ABCA79 /* MAAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBA7B42B1F56E800ABCA79 /* MAAPITests.swift */,
+			);
+			path = MAAPITests;
+			sourceTree = "<group>";
+		};
+		E8CBA7C12B1F572100ABCA79 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBA7982B1F530B00ABCA79 /* Helpers */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		E8DD30A82AB46C5A006954A7 = {
 			isa = PBXGroup;
 			children = (
@@ -1111,6 +1222,7 @@
 				E8DD313C2AB49027006954A7 /* L8 */,
 				E84F61462B0E2A2A00ED6941 /* L10 */,
 				E84F616B2B0E2C4B00ED6941 /* LTests */,
+				E8CBA7B32B1F56E800ABCA79 /* MAAPITests */,
 				E8DD30B22AB46C5A006954A7 /* Products */,
 				E8DD312A2AB48406006954A7 /* Frameworks */,
 			);
@@ -1132,6 +1244,8 @@
 				E8B6541C2AD6B44F007A469C /* MAServicesTests.xctest */,
 				E84F614E2B0E2BDD00ED6941 /* MAMainScenes.framework */,
 				E84F61572B0E2BDE00ED6941 /* MAMainScenesTests.xctest */,
+				E8CBA7A42B1F56E700ABCA79 /* MAAPI.framework */,
+				E8CBA7AD2B1F56E700ABCA79 /* MAAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1330,6 +1444,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8CBA79F2B1F56E700ABCA79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CBA7B62B1F56E800ABCA79 /* MAAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8DD30E82AB47C29006954A7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1467,6 +1589,43 @@
 			productReference = E8C42E1C2ABC4DF3009075FB /* MAFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E8CBA7A32B1F56E700ABCA79 /* MAAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CBA7BB2B1F56E800ABCA79 /* Build configuration list for PBXNativeTarget "MAAPI" */;
+			buildPhases = (
+				E8CBA79F2B1F56E700ABCA79 /* Headers */,
+				E8CBA7A02B1F56E700ABCA79 /* Sources */,
+				E8CBA7A12B1F56E700ABCA79 /* Frameworks */,
+				E8CBA7A22B1F56E700ABCA79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MAAPI;
+			productName = MAAPI;
+			productReference = E8CBA7A42B1F56E700ABCA79 /* MAAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8CBA7AC2B1F56E700ABCA79 /* MAAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8CBA7BE2B1F56E800ABCA79 /* Build configuration list for PBXNativeTarget "MAAPITests" */;
+			buildPhases = (
+				E8CBA7A92B1F56E700ABCA79 /* Sources */,
+				E8CBA7AA2B1F56E700ABCA79 /* Frameworks */,
+				E8CBA7AB2B1F56E700ABCA79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8CBA7B02B1F56E800ABCA79 /* PBXTargetDependency */,
+				E8CBA7B22B1F56E800ABCA79 /* PBXTargetDependency */,
+			);
+			name = MAAPITests;
+			productName = MAAPITests;
+			productReference = E8CBA7AD2B1F56E700ABCA79 /* MAAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E8DD30B02AB46C5A006954A7 /* MovieApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8DD30D62AB46C5B006954A7 /* Build configuration list for PBXNativeTarget "MovieApp" */;
@@ -1486,6 +1645,7 @@
 				E8C42E232ABC4DF3009075FB /* PBXTargetDependency */,
 				E8B654272AD6B450007A469C /* PBXTargetDependency */,
 				E84F61622B0E2BDE00ED6941 /* PBXTargetDependency */,
+				E8CBA7B82B1F56E800ABCA79 /* PBXTargetDependency */,
 			);
 			name = MovieApp;
 			productName = MovieApp;
@@ -1634,6 +1794,13 @@
 					E8C42E1B2ABC4DF3009075FB = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					E8CBA7A32B1F56E700ABCA79 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					E8CBA7AC2B1F56E700ABCA79 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E8DD30B02AB46C5A006954A7;
+					};
 					E8DD30B02AB46C5A006954A7 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -1686,6 +1853,8 @@
 				E8B6541B2AD6B44F007A469C /* MAServicesTests */,
 				E84F614D2B0E2BDD00ED6941 /* MAMainScenes */,
 				E84F61562B0E2BDE00ED6941 /* MAMainScenesTests */,
+				E8CBA7A32B1F56E700ABCA79 /* MAAPI */,
+				E8CBA7AC2B1F56E700ABCA79 /* MAAPITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1727,6 +1896,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E8C42E1A2ABC4DF3009075FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CBA7A22B1F56E700ABCA79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CBA7AB2B1F56E700ABCA79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1848,6 +2031,26 @@
 				E801ED632ACEF0BD00414CC5 /* WeakReference.swift in Sources */,
 				E8B653FC2AD561A8007A469C /* Logger.swift in Sources */,
 				E84F61452B0CDC5A00ED6941 /* Collection+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CBA7A02B1F56E700ABCA79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CBA7C72B1F5D6400ABCA79 /* HTTPStatusCode.swift in Sources */,
+				E8CBA7C52B1F57CA00ABCA79 /* BaseApiError.swift in Sources */,
+				E8CBA7C42B1F57C600ABCA79 /* ResponseError.swift in Sources */,
+				E8CBA7A82B1F56E700ABCA79 /* MAAPI.docc in Sources */,
+				E8CBA7C32B1F57BC00ABCA79 /* File.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CBA7A92B1F56E700ABCA79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CBA7B52B1F56E800ABCA79 /* MAAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2025,6 +2228,21 @@
 			isa = PBXTargetDependency;
 			target = E8C42E1B2ABC4DF3009075FB /* MAFoundation */;
 			targetProxy = E8C42E222ABC4DF3009075FB /* PBXContainerItemProxy */;
+		};
+		E8CBA7B02B1F56E800ABCA79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8CBA7A32B1F56E700ABCA79 /* MAAPI */;
+			targetProxy = E8CBA7AF2B1F56E800ABCA79 /* PBXContainerItemProxy */;
+		};
+		E8CBA7B22B1F56E800ABCA79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8DD30B02AB46C5A006954A7 /* MovieApp */;
+			targetProxy = E8CBA7B12B1F56E800ABCA79 /* PBXContainerItemProxy */;
+		};
+		E8CBA7B82B1F56E800ABCA79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8CBA7A32B1F56E700ABCA79 /* MAAPI */;
+			targetProxy = E8CBA7B72B1F56E800ABCA79 /* PBXContainerItemProxy */;
 		};
 		E8DD30C42AB46C5B006954A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2474,6 +2692,132 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8CBA7BC2B1F56E800ABCA79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorbunov.MAAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8CBA7BD2B1F56E800ABCA79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorbunov.MAAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8CBA7BF2B1F56E800ABCA79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorbunov.MAAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieApp";
+			};
+			name = Debug;
+		};
+		E8CBA7C02B1F56E800ABCA79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gorbunov.MAAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieApp";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -3061,6 +3405,24 @@
 			buildConfigurations = (
 				E8C42E272ABC4DF4009075FB /* Debug */,
 				E8C42E282ABC4DF4009075FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CBA7BB2B1F56E800ABCA79 /* Build configuration list for PBXNativeTarget "MAAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CBA7BC2B1F56E800ABCA79 /* Debug */,
+				E8CBA7BD2B1F56E800ABCA79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8CBA7BE2B1F56E800ABCA79 /* Build configuration list for PBXNativeTarget "MAAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CBA7BF2B1F56E800ABCA79 /* Debug */,
+				E8CBA7C02B1F56E800ABCA79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

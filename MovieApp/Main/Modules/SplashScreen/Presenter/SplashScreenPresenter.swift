@@ -6,6 +6,7 @@
 //
 
 import Combine
+import MAAPI
 
 final class SplashScreenPresenter {
     enum Request: Int, CaseIterable {
@@ -67,7 +68,23 @@ private extension SplashScreenPresenter {
         }
         let publishers: [AnyPublisher<Request?, Error>] = requestToPerform.map { request in
             publisher(for: request)
+            // Return Request (not Void) to store it in succeededRequests
                 .map { request }
+                .catch { [weak self] error -> AnyPublisher<Request?, Error> in
+                    if self?.isAccessDeniedError(error) ?? false {
+                        return Fail(error: error).eraseToAnyPublisher()
+                    } else {
+                        return Result.Publisher(nil).eraseToAnyPublisher()
+                    }
+                }.eraseToAnyPublisher()
+            
+            let allRequestPublisher =
         }
+    }
+    
+    func isAccessDeniedError(_ error: Error) -> Bool {
+        let statusCode = error.asResponseError?.statusCode
+        
+        return statusCode == HTTPStatusCode.notAuthorized.rawValue
     }
 }
