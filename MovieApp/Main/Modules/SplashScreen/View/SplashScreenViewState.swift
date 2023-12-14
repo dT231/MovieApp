@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import MAUIKit
+
 final class SplashScreenViewState: ObservableObject {
     @Published var isRequestsInProgress = false
     @Published var isSplashAnimationPlaying = true
+    @Published var errorOverlayModel: ErrorOverlayModel?
 }

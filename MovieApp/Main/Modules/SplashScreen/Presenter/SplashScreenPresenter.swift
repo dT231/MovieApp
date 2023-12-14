@@ -27,6 +27,7 @@ final class SplashScreenPresenter {
     private let interactor: SplashScreenInteracting
     private let viewState: SplashScreenViewState
     private let output: SplashScreenOutput
+    private let scheduler: some Scheduler<RunLoop> = RunLoop.main
     
     private var splashAnimationSubscriptions: AnyCancellable?
     private var requestSubscription: AnyCancellable?
@@ -77,14 +78,45 @@ private extension SplashScreenPresenter {
                         return Result.Publisher(nil).eraseToAnyPublisher()
                     }
                 }.eraseToAnyPublisher()
-            
-            let allRequestPublisher =
         }
+        
+        let allRequestsPublisher = Publishers.MergeMany(publishers)
+        // Filter nil (=failed) requests
+            .compactMap { $0 }
+        // Collect all values and publish it as array. It allows not to trigger main queue for every request
+            .collect()
+            .receive(on: scheduler)
+            .eraseToAnyPublisher()
+        
+        requestSubscription = allRequestsPublisher.sink(receiveCompletion: { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .finished:
+                if isAllMandatoryRequestsSucceeded {
+                    let startRequestBlock = {
+                        
+                    }
+                }
+            case .failure(_):
+                viewState.errorOverlayModel = .networkModel(buttonTapHandler: { [weak self] in
+                    self?.loadAllData()
+                })
+            }
+        }, receiveValue: { [weak self] result in
+            self?.succeededRequests.append(contentsOf: result)
+        })
     }
     
     func isAccessDeniedError(_ error: Error) -> Bool {
         let statusCode = error.asResponseError?.statusCode
         
         return statusCode == HTTPStatusCode.notAuthorized.rawValue
+    }
+    
+    var isAllMandatoryRequestsSucceeded: Bool {
+        Request.allCases
+            .filter(\.isMandatory)
+            .allSatisfy { succeededRequests.contains($0) }
     }
 }

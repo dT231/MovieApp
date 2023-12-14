@@ -120,6 +120,8 @@
 		E8CBA7C42B1F57C600ABCA79 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA79A2B1F533100ABCA79 /* ResponseError.swift */; };
 		E8CBA7C52B1F57CA00ABCA79 /* BaseApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA79C2B1F554400ABCA79 /* BaseApiError.swift */; };
 		E8CBA7C72B1F5D6400ABCA79 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7C62B1F5D6400ABCA79 /* HTTPStatusCode.swift */; };
+		E8CBA7CB2B29E2AF00ABCA79 /* ErrorOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7CA2B29E2AF00ABCA79 /* ErrorOverlay.swift */; };
+		E8CBA7CD2B2B365100ABCA79 /* ErrorOverlayModel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CBA7CC2B2B365100ABCA79 /* ErrorOverlayModel+.swift */; };
 		E8DD30B92AB46C5B006954A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DD30B82AB46C5B006954A7 /* Assets.xcassets */; };
 		E8DD30BD2AB46C5B006954A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DD30BC2AB46C5B006954A7 /* Preview Assets.xcassets */; };
 		E8DD30C72AB46C5B006954A7 /* MovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DD30C62AB46C5B006954A7 /* MovieAppTests.swift */; };
@@ -430,6 +432,8 @@
 		E8CBA7B42B1F56E800ABCA79 /* MAAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAAPITests.swift; sourceTree = "<group>"; };
 		E8CBA7C22B1F57BC00ABCA79 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		E8CBA7C62B1F5D6400ABCA79 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		E8CBA7CA2B29E2AF00ABCA79 /* ErrorOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorOverlay.swift; sourceTree = "<group>"; };
+		E8CBA7CC2B2B365100ABCA79 /* ErrorOverlayModel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorOverlayModel+.swift"; sourceTree = "<group>"; };
 		E8DD30B12AB46C5A006954A7 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DD30B42AB46C5A006954A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8DD30B82AB46C5B006954A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -814,6 +818,7 @@
 		E8B654512ADC047A007A469C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E8CBA7C82B29E28800ABCA79 /* Errors */,
 				E8B654522ADC0494007A469C /* TabBar */,
 			);
 			path = Views;
@@ -1207,6 +1212,23 @@
 				E8CBA7982B1F530B00ABCA79 /* Helpers */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		E8CBA7C82B29E28800ABCA79 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBA7C92B29E29700ABCA79 /* Overlay */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		E8CBA7C92B29E29700ABCA79 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				E8CBA7CA2B29E2AF00ABCA79 /* ErrorOverlay.swift */,
+				E8CBA7CC2B2B365100ABCA79 /* ErrorOverlayModel+.swift */,
+			);
+			path = Overlay;
 			sourceTree = "<group>";
 		};
 		E8DD30A82AB46C5A006954A7 = {
@@ -2161,11 +2183,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C42E122ABC49C9009075FB /* WindowHierarchyHelping.swift in Sources */,
+				E8CBA7CD2B2B365100ABCA79 /* ErrorOverlayModel+.swift in Sources */,
 				E8C42E112ABC49C4009075FB /* WindowGetting.swift in Sources */,
 				E84F613F2B0BA5DC00ED6941 /* UITabBarItem+.swift in Sources */,
 				E8B654572ADC0548007A469C /* SMTabBarItemType.swift in Sources */,
 				E8DD311E2AB482C5006954A7 /* MAUIKit.docc in Sources */,
 				E8DD31282AB482E0006954A7 /* Constants.swift in Sources */,
+				E8CBA7CB2B29E2AF00ABCA79 /* ErrorOverlay.swift in Sources */,
 				E8B654552ADC04ED007A469C /* MATabBarItemModel.swift in Sources */,
 				E8C42E102ABC4991009075FB /* UIApplication+.swift in Sources */,
 			);
